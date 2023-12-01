@@ -1,0 +1,14 @@
+:root {
+    --header-height: 10vh;
+    --max-content-width: 1200px;
+    --side-padding-for-sections: max(5vw, calc((100vw - var(--max-content-width)) / 2));
+    --big-gap: 32px;
+    --medium-gap: 16px;
+    --small-gap: 8px;
+
+    --h1-font-size: 53px;
+    --h2-font-size: 46px;
+    --body-font-size: 18px;
+
+    --border: 0.5px solid black
+}

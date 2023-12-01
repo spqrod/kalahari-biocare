@@ -1,0 +1,39 @@
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: white;
+    border-bottom: var(--border);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & a {
+        text-decoration: none;
+    }
+
+    .logoContainer {
+        flex-basis: 200px;
+        display: flex;
+        justify-content: start;
+        
+        .logo {
+            height: var(--header-height);
+        }
+    }
+    
+    .menuContainer {
+        display: flex;
+        justify-content: center;
+        gap: var(--big-gap)
+    }
+    .whatsAppButtonContainer {
+        flex-basis: 200px;
+        display: flex;
+        justify-content: end;
+
+    }
+
+}
