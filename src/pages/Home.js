@@ -1,9 +1,18 @@
+import "../styles/home.css"
+
 export default function Home() {
     return (
         <main>
-            <h1>Home Page</h1>
             <section className="heroSection">
-                <h1>Hero Section</h1>
+                <h1>Kalahari Biocare</h1>
+                <div className="square">
+                    <p className="text">
+                        We produce the best organic African oils found on the world market
+                    </p>
+                </div>
+                <button>
+                    See Our Products
+                </button>
             </section>
             <section className="welcomeSection">
                 <h1>Welcome Section</h1>
