@@ -10,10 +10,6 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    & a {
-        text-decoration: none;
-    }
-
     .logoContainer {
         flex-basis: 200px;
         display: flex;

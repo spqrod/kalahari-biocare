@@ -1,7 +1,7 @@
 import "../styles/header.css";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../resources/logo.svg";
-import whatsapp from "../resources/whatsapp.svg";
+import whatsapp from "../resources/whatsapp-icon.svg";
 
 export default function Header() {
     return (

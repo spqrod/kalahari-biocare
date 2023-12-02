@@ -47,8 +47,20 @@ h2 {
     /* padding-bottom: var(--big-gap); */
 }
 
+h6 {
+    font-size: var(--h6-font-size);
+    font-weight: 700;
+    display: inline;
+}
+
 p, a, span, div {
     font-size: var(--body-font-size);
     /* font-family: var(--font-family-2); */
+}
+
+header, footer {
+    & a {
+        text-decoration: none;
+    }
 }
 

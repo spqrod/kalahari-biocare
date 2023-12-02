@@ -8,7 +8,10 @@
 
     --h1-font-size: 53px;
     --h2-font-size: 46px;
+    --h6-font-size: 18px;
     --body-font-size: 18px;
 
-    --border: 0.5px solid black
+    --border: 0.5px solid black;
+
+    --grey-text: grey;
 }
