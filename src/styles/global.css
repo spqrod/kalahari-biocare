@@ -11,51 +11,45 @@ header, section, footer {
 
 /* TYPOGRAPHY */
 
-@font-face {
-    /* font-family: 'PlayfairDisplaySC';
-    src: 
-        local('PlayfairDisplaySC'),
-        url('../fonts/PlayfairDisplaySC-Regular.ttf') format('truetype'); */
-}
+
     
-@font-face {
-    /* font-family: 'Jost';
-    src: 
-        local('Jost'),
-        url('../fonts/Jost-Regular.ttf') format('truetype'); */
-}
 
 
-h1, h2, p, span, a, div {
-    color: var(--on-background);
+
+h1, h2, h6, p, span, a, div {
+    color: var(--normal-text);
     line-height: 1.5;
 }
 
 h1 {
     font-size: var(--h1-font-size);
     text-align: center;
-    /* font-family: var(--font-family-1); */
-
+    font-family: "font-1";
+    font-weight: 400;
+    
     /* padding-bottom: var(--big-gap); */
 }
 
 h2 {
     font-size: var(--h2-font-size);
     text-align: center;
-    /* font-family: var(--font-family-1); */
+    font-family: "font-1";
+    font-weight: 400;
     /* padding-top: var(--big-gap); */
     /* padding-bottom: var(--big-gap); */
 }
 
 h6 {
     font-size: var(--h6-font-size);
-    font-weight: 700;
+    font-weight: 500;
     display: inline;
+    font-family: "font-2";
 }
 
 p, a, span, div {
     font-size: var(--body-font-size);
-    /* font-family: var(--font-family-2); */
+    font-family: "font-2";
+    font-weight: 300;
 }
 
 header, footer {

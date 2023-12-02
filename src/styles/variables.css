@@ -13,5 +13,17 @@
 
     --border: 0.5px solid black;
 
-    --grey-text: grey;
+    --normal-text: #262626;
+    --grey-text: #B1B5B4;
+}
+
+@font-face {
+    font-family: 'font-1';
+    src: 
+        url('../resources/fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "font-2";
+    src: url("../resources/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
 }
