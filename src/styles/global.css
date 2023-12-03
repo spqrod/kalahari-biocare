@@ -9,6 +9,15 @@ header, section, footer {
     padding-right: var(--side-padding-for-sections);
 }
 
+section {
+    padding-top: var(--big-gap);
+    padding-bottom: var(--big-gap);
+}
+
+.image {
+    border-radius: var(--border-radius);
+}
+
 /* TYPOGRAPHY */
 
 h1, h2, h6, p, span, a, div {
@@ -21,7 +30,6 @@ h1 {
     text-align: center;
     font-family: "font-1";
     font-weight: 400;
-    
 }
 
 h2 {
@@ -76,3 +84,5 @@ button {
         color: white;
     }
 }
+
+
