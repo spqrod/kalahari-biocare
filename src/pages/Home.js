@@ -2,10 +2,13 @@ import "../styles/home.css"
 import womenWithBaskets from "../resources/women-with-baskets.jpg";
 import womanHoldingNuts from "../resources/woman-holding-nuts.jpg";
 import basketWithSeeds from "../resources/basket-with-seeds.jpg";
+import smilingWoman from "../resources/smiling-woman.jpg";
+import oils from "../resources/oils.jpg";
 
 export default function Home() {
     return (
         <main>
+
             <section className="heroSection">
                 <h1>Kalahari Biocare</h1>
                 <div className="square">
@@ -17,8 +20,9 @@ export default function Home() {
                     See Our Products
                 </button>
             </section>
+
             <section className="welcomeSection">
-                <h1>Welcome to Kalahari Natural Oils!</h1>
+                <h2>Welcome to Kalahari Natural Oils!</h2>
                 <div className="contentContainer">
                     <p className="text1">
                         For more than 2 decades we have been producing 100% organic and pure natural African oils. We make sure that your ingredients are freshly made and of best quality. Our oils are extracted to order and with integrity. 
@@ -31,12 +35,26 @@ export default function Home() {
                     <img className="basketWithSeedsImage image" src={basketWithSeeds} alt="" />
                 </div>
             </section>
+
             <section className="whyUseSection">
-                <h1>Why Use Section</h1>
+                <div className="smilingWomanImageContainer">
+                    <img className="smilingWoman image" src={smilingWoman} alt="" />
+                </div>
+                <div className="textContainer">
+                    <h2>Why Use Our Oils?</h2>
+                    <p>
+                        We offer best on the market, 100% natural and pure oils. <br/><br/>
+                        Kalahari oils will improve your formulations, give it that extra bit of function that you desire in your skin and hair care products. <br/><br/>
+                        Our oils are cold Buttoned to order so that you will get as fresh oil as possible. Our customer service is quick and friendly.
+                    </p>
+                </div>
+                <img className="oils image" src={oils} alt="" />
             </section>
+
             <section className="productsSection">
-                <h1>Products Section</h1>
+                <h2>Products Section</h2>
             </section>
+
             <section className="reviewsSection">
                 <h1>Reviews Section</h1>
             </section>

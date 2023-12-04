@@ -37,6 +37,7 @@ h2 {
     text-align: center;
     font-family: "font-1";
     font-weight: 400;
+    padding-bottom: var(--big-gap);
 }
 
 h6 {
