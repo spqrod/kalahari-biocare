@@ -4,10 +4,12 @@ import womanHoldingNuts from "../resources/woman-holding-nuts.jpg";
 import basketWithSeeds from "../resources/basket-with-seeds.jpg";
 import smilingWoman from "../resources/smiling-woman.jpg";
 import oils from "../resources/oils.jpg";
+import kalahariOilIn50Ml from "../resources/kalahari-oil-in-50ml.jpg";
+import oilIn1l from "../resources/oil-in-1l.jpg";
 
 export default function Home() {
     return (
-        <main>
+        <main className="homePage">
 
             <section className="heroSection">
                 <h1>Kalahari Biocare</h1>
@@ -52,7 +54,30 @@ export default function Home() {
             </section>
 
             <section className="productsSection">
-                <h2>Products Section</h2>
+                <h2>Products</h2>
+
+                <div className="productsContainer">
+
+                    <div className="productContainer">
+                        <img className="image" src={kalahariOilIn50Ml} alt="" />
+                        <h5>Consumer Products</h5>
+                        <p className="description">Description</p>
+                        <button className="button">
+                            See Our Products
+                        </button>
+                    </div>
+
+                    <div className="productContainer">
+                        <img className="image" src={oilIn1l} alt="" />
+                        <h5>Cosmetic Ingredients</h5>
+                        <p className="description">Description</p>
+                        <button className="button">
+                            See Our Products
+                        </button>
+                    </div>
+
+                </div>
+
             </section>
 
             <section className="reviewsSection">

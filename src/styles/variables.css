@@ -2,6 +2,7 @@
     --header-height: 10vh;
     --max-content-width: 1200px;
     --side-padding-for-sections: max(5vw, calc((100vw - var(--max-content-width)) / 2));
+    --very-big-gap: 64px;
     --big-gap: 32px;
     --medium-gap: 16px;
     --small-gap: 8px;
@@ -10,6 +11,7 @@
 
     --h1-font-size: 53px;
     --h2-font-size: 46px;
+    --h5-font-size: 24px;
     --h6-font-size: 18px;
     --body-font-size: 18px;
 
@@ -19,7 +21,10 @@
     --green-1: #648149;
     --green-2: #4E6C31;
     --grey-1: #B1B5B4;
+    --yellow-1: #BFA15A;
     --normal-text: #262626;
+
+    --button-height: 45px;
 }
 
 @font-face {
