@@ -6,6 +6,11 @@ import smilingWoman from "../resources/smiling-woman.jpg";
 import oils from "../resources/oils.jpg";
 import kalahariOilIn50Ml from "../resources/kalahari-oil-in-50ml.jpg";
 import oilIn1l from "../resources/oil-in-1l.jpg";
+import tree from "../resources/tree.jpg";
+import quoteIcon from "../resources/quote.svg";
+import starIcon from "../resources/star.svg";
+import arrowLeft from "../resources/arrow-left.svg";
+import arrowRight from "../resources/arrow-right.svg";
 
 export default function Home() {
     return (
@@ -81,8 +86,40 @@ export default function Home() {
             </section>
 
             <section className="reviewsSection">
-                <h1>Reviews Section</h1>
+                <h2>What Our Clients Say</h2>
+                <div className="reviewsContainer">
+                    <div className="reviewContainer">
+                        <img className="quoteIcon" src={quoteIcon} alt="" />
+                            <p className="recommendedText">Recommended Kalahari Natural Oils as a supplier</p>
+                            <div className="starsContainer">
+                                <img src={starIcon} alt="" />
+                                <img src={starIcon} alt="" />
+                                <img src={starIcon} alt="" />
+                                <img src={starIcon} alt="" />
+                                <img src={starIcon} alt="" />
+                            </div>
+                            <p>
+                                We are extremely pleased with the quality of service received from Kalahari Natural Oils. I sincerely appreciate the responsiveness, efficiency and gracious customer service received from Monica and the manner that business is conducted. We are most definitely a satisfied customer and recommend Kalahari Natural Oils as a supplier.
+                            </p>
+                            <h6 className="reviewAuthor">
+                                woribeauty.com
+                            </h6>
+
+                    </div>
+                    <div className="paginationContainer">
+                        <img src={arrowLeft} alt="" />
+                        <p className="paginationText">1 / 4</p>
+                        <img src={arrowRight} alt="" />
+                    </div>
+
+                </div>
+
+                <div className="imageContainer">
+                    <img className="image" src={tree} alt="" />
+                </div>
+
             </section>
+
             <section className="featuresSection">
                 <h1>Features Section</h1>
             </section>
