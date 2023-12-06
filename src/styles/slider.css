@@ -1,0 +1,100 @@
+.sliderContainer {
+    border: 3px solid blue;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .reviewsContainer {
+        position: relative;
+        width: 100%;
+        border: 3px solid yellow;
+
+            .reviewContainer {
+                width: calc(50% - var(--side-padding-for-sections) + 20%);
+                border: 3px solid red;
+
+                padding: var(--big-gap) var(--big-gap) var(--big-gap) 0;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                gap: var(--medium-gap);
+                background-color: white;
+                animation-duration: 1s;
+
+                .quoteIcon {
+                    position: absolute;
+                    top: -20px;
+                    left: 0;
+                }
+                
+                .recommendedText {
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+
+                .starsContainer {
+                    display: flex;
+                    gap: 4px;
+                }
+
+                .reviewAuthor {
+                    text-align: end;
+                }
+
+                &.hidden {
+                    visibility: hidden;
+                }
+    
+                &.moveLeft {
+                    animation-name: moveLeft;
+                }
+
+                &.moveRight {
+                    animation-name: moveRight;
+                }
+
+                &.revealFromRight {
+                    animation-name: revealFromRight;
+                }
+
+                &.revealFromLeft {
+                    animation-name: revealFromLeft;
+                }
+
+
+            }
+        }
+        
+    .paginationContainer {
+        border: 3px solid purple;
+        align-self: end;
+        display: flex;
+        align-items: center;
+        gap: var(--medium-gap);
+
+        .paginationText {
+            font-size: 36px;
+            font-family: "font-1";
+        }
+    }
+}
+
+@keyframes revealFromRight {
+    from {transform: translateX(2000px);}
+    to {transform: translateX(0);}
+}
+
+@keyframes revealFromLeft {
+    from {transform: translateX(-2000px);}
+    to {transform: translateX(0);}
+}
+
+@keyframes moveLeft {
+    from {transform: translateX(0);}
+    to {transform: translateX(-2000px);}
+}
+
+@keyframes moveRight {
+    from {transform: translateX(0);}
+    to {transform: translateX(2000px);}
+}
