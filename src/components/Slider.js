@@ -4,26 +4,46 @@ import arrowLeft from "../resources/arrow-left.svg";
 import arrowRight from "../resources/arrow-right.svg";
 import "../styles/slider.css";
 
-
-
-
-
 export default function Slider() {
 
     let currentReviewIndex = 0;
+    let arrowButtonsDisabled = false;
 
     const controller = {
         handleRightArrowClick() {
-            controller.moveCurrentReviewLeft();
-            controller.revealReviewFromRight(++currentReviewIndex);
-            setTimeout(controller.clearClasses, 1000);
-    
+            if (currentReviewIndex < 3 && !arrowButtonsDisabled) {
+                arrowButtonsDisabled = true;
+                controller.moveCurrentReviewLeft();
+                controller.revealReviewFromRight(++currentReviewIndex);
+                controller.updatePagination();
+                setTimeout(() => {
+                    controller.clearClasses();
+                    arrowButtonsDisabled = false;
+                }, 1000);
+            }
+        },
+        handleLeftArrowClick() {
+            if (currentReviewIndex > 0 && !arrowButtonsDisabled) {
+                arrowButtonsDisabled = true;
+                controller.moveCurrentReviewRight();
+                controller.revealReviewFromLeft(--currentReviewIndex);
+                controller.updatePagination();
+                setTimeout(() => {
+                    controller.clearClasses();
+                    arrowButtonsDisabled = false;
+                }, 1000);
+            }
         },
         moveCurrentReviewLeft() { 
             const currentReview = document.querySelector(`.reviewContainer[reviewId='${currentReviewIndex}']`);
             currentReview.classList.add("moveLeft");
             setTimeout(() => currentReview.classList.add("hidden"), 1000);
 
+        },
+        moveCurrentReviewRight() { 
+            const currentReview = document.querySelector(`.reviewContainer[reviewId='${currentReviewIndex}']`);
+            currentReview.classList.add("moveRight");
+            setTimeout(() => currentReview.classList.add("hidden"), 1000);
         },
         revealReviewFromRight(reviewId) {
             const nextReview = document.querySelector(`.reviewContainer[reviewId='${reviewId}']`);
@@ -35,16 +55,6 @@ export default function Slider() {
             nextReview.classList.add("revealFromLeft");
             nextReview.classList.remove("hidden");
         },
-        handleLeftArrowClick() {
-            controller.moveCurrentReviewRight();
-            controller.revealReviewFromLeft(--currentReviewIndex);
-            setTimeout(controller.clearClasses, 1000);
-        },
-        moveCurrentReviewRight() { 
-            const currentReview = document.querySelector(`.reviewContainer[reviewId='${currentReviewIndex}']`);
-            currentReview.classList.add("moveRight");
-            setTimeout(() => currentReview.classList.add("hidden"), 1000);
-        },
         clearClasses() {
             const reviewContainers = document.querySelectorAll(".reviewContainer");
             reviewContainers.forEach(item => {
@@ -53,6 +63,10 @@ export default function Slider() {
                 item.classList.remove("revealFromRight");
                 item.classList.remove("revealFromLeft");
             });
+        },
+        updatePagination() {
+            const pagination = document.querySelector(".paginationText");
+            pagination.textContent = `${currentReviewIndex + 1} / 4`;
         }
     }
 
@@ -92,6 +106,41 @@ export default function Slider() {
                         </p>
                         <h6 className="reviewAuthor">
                             Paola, CEO Essential Skincare
+                        </h6>
+
+                </div>
+                <div className="reviewContainer hidden" reviewId="2">
+                    <img className="quoteIcon" src={quoteIcon} alt="" />
+                        <p className="recommendedText">Recommended Kalahari Natural Oils as a supplier</p>
+                        <div className="starsContainer">
+                            <img src={starIcon} alt="" />
+                            <img src={starIcon} alt="" />
+                            <img src={starIcon} alt="" />
+                            <img src={starIcon} alt="" />
+                            <img src={starIcon} alt="" />
+                        </div>
+                        <p>
+                            Thank you for doing the business with us. I always expect you to introduce a new product and culture. I am looking forward to seeing you in the future.
+                        </p>
+                        <h6 className="reviewAuthor">
+                            A Japanese customer
+                        </h6>
+                </div>
+                <div className="reviewContainer hidden" reviewId="3">
+                    <img className="quoteIcon" src={quoteIcon} alt="" />
+                        <p className="recommendedText">Recommended Kalahari Natural Oils as a supplier</p>
+                        <div className="starsContainer">
+                            <img src={starIcon} alt="" />
+                            <img src={starIcon} alt="" />
+                            <img src={starIcon} alt="" />
+                            <img src={starIcon} alt="" />
+                            <img src={starIcon} alt="" />
+                        </div>
+                        <p>
+                            I have enjoyed working with Kalahari Natural Oils as their quality is always high. They are timely in responding to our requests, and have always been easy to work with. I highly recommend KNO for their product and respectful staff.
+                        </p>
+                        <h6 className="reviewAuthor">
+                            Mary Jo K - USA
                         </h6>
 
                 </div>
