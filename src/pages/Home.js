@@ -1,4 +1,5 @@
 import "../styles/home.css"
+import Slider from "../components/Slider";
 import womenWithBaskets from "../resources/women-with-baskets.jpg";
 import womanHoldingNuts from "../resources/woman-holding-nuts.jpg";
 import basketWithSeeds from "../resources/basket-with-seeds.jpg";
@@ -7,7 +8,11 @@ import oils from "../resources/oils.jpg";
 import kalahariOilIn50Ml from "../resources/kalahari-oil-in-50ml.jpg";
 import oilIn1l from "../resources/oil-in-1l.jpg";
 import tree from "../resources/tree.jpg";
-import Slider from "../components/Slider";
+import villagersWithMonica from "../resources/villagers-with-monica.jpg";
+import villagersWithMonica2 from "../resources/villagers-with-monica-2.jpg";
+import berries1 from "../resources/berries-1.jpg";
+import berries2 from "../resources/berries-2.jpg";
+import berries3 from "../resources/berries-3.jpg";
 
 export default function Home() {
 
@@ -96,9 +101,31 @@ export default function Home() {
 
             </section>
 
-            <section className="featuresSection">
-                <h1>Features Section</h1>
+            <section className="feature1Section">
+
+                <img className="image villagersWithMonicaImage1" src={villagersWithMonica} alt="villagers with monica" />
+                <div className="contentContainer">
+                    <h2>Sustainable Future</h2>
+                    <p>
+                        Everybody has the right to be treated with respect and dignity. Poverty reduction is the key to give people hope, pride and a better future.
+                    </p>
+                    <img className="image villagersWithMonicaImage2" src={villagersWithMonica2} alt="villagers with monica" />
+                </div>
             </section>
+
+            <section className="feature2Section">
+                <div className="textContentContainer">
+                    <h2>Valuing Forests</h2>
+                    <p>
+                        The Buttonure on the forests is growing through unsustainable timber logging, charcoal burning, illegal poaching and shifting cultivation practices.<br/><br/>
+                        We give value to trees through active and continuous demand for produce. Our supplier groups process high quality raw materials for our oils maintaining sustainable harvesting practices.
+                    </p>
+                </div>
+                <img className="image berries1" src={berries1} alt="african berries" />
+                <img className="image berries2" src={berries2} alt="african berries" />
+                <img className="image berries3" src={berries3} alt="african berries" />
+            </section>
+
             <section className="certificatesSection">
                 <h1>Certificates Section</h1>
             </section>
@@ -106,9 +133,6 @@ export default function Home() {
                 <h1>Contact Section</h1>
             </section>
 
-            <section className="testSection">
-                <Slider />
-            </section>
         </main>
     );
 }

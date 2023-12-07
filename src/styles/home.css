@@ -151,7 +151,6 @@
         .contentContainer {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
-
         }
 
         .imageContainer {
@@ -163,11 +162,57 @@
             }
         }
     }
-}
 
-.testSection {
-    height: 100vh;
-    border: 3px solid orange;
-    width: 70vw;
 
+    .feature1Section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--big-gap);
+
+        .villagersWithMonicaImage1 {
+            grid-column: 1 / 2;
+        }
+
+        .contentContainer {
+            grid-column: 2 / 3;
+            display: flex;
+            flex-wrap: wrap;
+
+            .villagersWithMonicaImage2 {
+                align-self: end;
+            }
+        }
+    }
+
+    .feature2Section {
+        background-image: url("../resources/feature-2-background.jpg");
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 3fr 100px max-content;
+        gap: var(--big-gap);
+
+        .image {
+            width: 100%;
+        }
+
+        .textContentContainer {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+        }
+
+        .image.berries2 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        .image.berries3 {
+            grid-column: 4 / 6;
+            grid-row: 1 / 2;
+        }
+
+        .image.berries1 {
+            grid-column: 3 / 5;
+            grid-row: 3 / 4;
+        }
+    }
 }
