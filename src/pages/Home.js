@@ -85,7 +85,10 @@ export default function Home() {
 
             <section className="reviewsSection">
 
-                <h2>What Our Clients Say</h2>
+                <div className="contentContainer">
+                    <h2>What Our Clients Say</h2>
+                    <Slider />
+                </div>
 
                 <div className="imageContainer">
                     <img className="image" src={tree} alt="" />

@@ -83,13 +83,12 @@ export default function Slider() {
                             <img src={starIcon} alt="" />
                             <img src={starIcon} alt="" />
                         </div>
-                        <p>
+                        <p className="reviewText">
                             We are extremely pleased with the quality of service received from Kalahari Natural Oils. I sincerely appreciate the responsiveness, efficiency and gracious customer service received from Monica and the manner that business is conducted. We are most definitely a satisfied customer and recommend Kalahari Natural Oils as a supplier.
                         </p>
                         <h6 className="reviewAuthor">
                             woribeauty.com
                         </h6>
-
                 </div>
                 <div className="reviewContainer hidden" reviewId="1">
                     <img className="quoteIcon" src={quoteIcon} alt="" />
@@ -101,7 +100,7 @@ export default function Slider() {
                             <img src={starIcon} alt="" />
                             <img src={starIcon} alt="" />
                         </div>
-                        <p>
+                        <p className="reviewText">
                             8 years ago we fell in love with Kalahari Biocare’s certified organic mongongo oil, and we still are!! Their service is impeccable too!
                         </p>
                         <h6 className="reviewAuthor">
@@ -119,7 +118,7 @@ export default function Slider() {
                             <img src={starIcon} alt="" />
                             <img src={starIcon} alt="" />
                         </div>
-                        <p>
+                        <p className="reviewText">
                             Thank you for doing the business with us. I always expect you to introduce a new product and culture. I am looking forward to seeing you in the future.
                         </p>
                         <h6 className="reviewAuthor">
@@ -136,13 +135,12 @@ export default function Slider() {
                             <img src={starIcon} alt="" />
                             <img src={starIcon} alt="" />
                         </div>
-                        <p>
+                        <p className="reviewText">
                             I have enjoyed working with Kalahari Natural Oils as their quality is always high. They are timely in responding to our requests, and have always been easy to work with. I highly recommend KNO for their product and respectful staff.
                         </p>
                         <h6 className="reviewAuthor">
                             Mary Jo K - USA
                         </h6>
-
                 </div>
             </div>
             <div className="paginationContainer">
