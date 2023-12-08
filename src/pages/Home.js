@@ -13,6 +13,9 @@ import villagersWithMonica2 from "../resources/villagers-with-monica-2.jpg";
 import berries1 from "../resources/berries-1.jpg";
 import berries2 from "../resources/berries-2.jpg";
 import berries3 from "../resources/berries-3.jpg";
+import woman1 from "../resources/woman-1.jpg";
+import woman2 from "../resources/woman-2.jpg";
+
 
 export default function Home() {
 
@@ -124,6 +127,28 @@ export default function Home() {
                 <img className="image berries1" src={berries1} alt="african berries" />
                 <img className="image berries2" src={berries2} alt="african berries" />
                 <img className="image berries3" src={berries3} alt="african berries" />
+            </section>
+
+            <section className="feature3Section">
+                <div className="textContainer">
+                    <h2>Ethical BioTrade</h2>
+                    <p>
+                        Zambia is a signatory of the Nagoya protocol. At Kalahari BioCare we follow the UN BioTrade Principles & Criteria for use of Terrestrial Biodiversity to ensure the fair and equitable sharing of the benefits generated from the utilisation of forest resources.
+                    </p>
+                </div>
+            </section>
+
+
+            <section className="feature4Section">
+                <div className="textContainer">
+                    <h2>Empowering Women</h2>
+                    <p>
+                        Over the years, we have established relationships with the remote rural communities from whom we source high quality raw materials. <br/><br/>
+                        The work is mainly done by women. This gives these women additional cash income, more opportunities and independence.
+                    </p>
+                </div>
+                <img className="image woman1" src={woman1} alt="" />
+                <img className="image woman2" src={woman2} alt="" />
             </section>
 
             <section className="certificatesSection">
