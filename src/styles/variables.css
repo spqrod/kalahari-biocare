@@ -8,6 +8,7 @@
     --small-gap: 8px;
 
     --border-radius: 2px;
+    --border-white: 1px solid white;
 
     --h1-font-size: 53px;
     --h2-font-size: 46px;
@@ -22,6 +23,8 @@
     --green-2: #4E6C31;
     --grey-1: #B1B5B4;
     --yellow-1: #BFA15A;
+    --yellow-2: #BF925A;
+    --beige-1: #CDAA7F;
     --normal-text: #262626;
 
     --button-height: 45px;

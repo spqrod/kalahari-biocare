@@ -1,0 +1,41 @@
+.contactForm {
+    max-width: 600px;
+
+    & h2 {
+        color: white;
+    }
+    
+    .fieldsContainer {
+        padding: var(--very-big-gap);
+        border: var(--border-white);
+        display: flex;
+        flex-direction: column;
+        gap: var(--big-gap);
+        
+        .labelAndInputContainer {
+            border-bottom: 1px solid var(--beige-1);
+            display: flex;
+            gap: var(--medium-gap);
+
+            & label {
+                color: white;
+                width: 70px;
+            }
+            
+            & input {
+                color: white;
+                outline: none;
+                border: none;
+                background: none;
+            }
+
+        }
+    }
+
+    .button {
+        position: relative;
+        top: calc(var(--button-height) / 2 * (-1));
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

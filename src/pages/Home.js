@@ -1,5 +1,6 @@
 import "../styles/home.css"
 import Slider from "../components/Slider";
+import ContactForm from "../components/ContactFrom";
 import womenWithBaskets from "../resources/women-with-baskets.jpg";
 import womanHoldingNuts from "../resources/woman-holding-nuts.jpg";
 import basketWithSeeds from "../resources/basket-with-seeds.jpg";
@@ -15,6 +16,10 @@ import berries2 from "../resources/berries-2.jpg";
 import berries3 from "../resources/berries-3.jpg";
 import woman1 from "../resources/woman-1.jpg";
 import woman2 from "../resources/woman-2.jpg";
+import logoEu from "../resources/logo-eu.svg";
+import logoUsda from "../resources/logo-usda.svg";
+import logoSaeopa from "../resources/logo-saeopa.svg";
+import logoEcocert from "../resources/logo-ecocert.svg";
 
 
 export default function Home() {
@@ -138,7 +143,6 @@ export default function Home() {
                 </div>
             </section>
 
-
             <section className="feature4Section">
                 <div className="textContainer">
                     <h2>Empowering Women</h2>
@@ -152,10 +156,31 @@ export default function Home() {
             </section>
 
             <section className="certificatesSection">
-                <h1>Certificates Section</h1>
+                <h2>Certificates and Memberships</h2>
+                <div className="certificatesContainer">
+                    <div className="certificateContainer">
+                        <img className="image certificate" src={logoUsda} alt="" />
+                    </div>
+                    <div className="certificateContainer">
+                        <img className="image certificate" src={logoSaeopa} alt="" />
+                    </div>
+                    <div className="certificateContainer">
+                        <img className="image certificate" src={logoEcocert} alt="" />
+                    </div>
+                    <div className="certificateContainer">
+                        <img className="image certificate" src={logoEu} alt="" />
+                    </div>
+                </div>
             </section>
+
             <section className="contactSection">
-                <h1>Contact Section</h1>
+                <div className="contactContainer">
+                    <ContactForm />
+
+                </div>
+                <div className="imageContainer">
+                    
+                </div>
             </section>
 
         </main>
