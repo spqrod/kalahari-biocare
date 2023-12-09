@@ -6,6 +6,7 @@ import "./styles/global.css";
 import "./styles/variables.css";
 
 import Home from "./pages/Home.js";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Header />
         <Routes>
           <Route path = "/" element = { <Home /> } />
-          <Route path = "/products" element = { <Home /> } />
+          <Route path = "/products" element = { <Products /> } />
           <Route path = "/contact" element = { <Home /> } />
           <Route path = "/about" element = { <Home /> } />
           <Route path = "/privacy" element = { <Home /> } />
