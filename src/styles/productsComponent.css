@@ -1,0 +1,27 @@
+.productsContainer {
+    display: flex;
+    justify-content: center;
+    gap: var(--big-gap);
+
+    .productContainer {
+        border: 1px solid white;
+        padding: 50px 50px calc(50px + var(--button-height) / 2) 50px;
+        position: relative;
+
+        .image {
+            width: 400px;
+            height: 320px;
+        }
+
+        .description {
+            text-align: center;
+        }
+
+        .button {
+            position: absolute;
+            bottom: calc(var(--button-height) / 2 * (-1) );
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

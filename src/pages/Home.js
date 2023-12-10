@@ -1,13 +1,12 @@
 import "../styles/home.css"
 import Slider from "../components/Slider";
 import ContactForm from "../components/ContactFrom";
+import ProductsComponent from "../components/ProductsComponent";
 import womenWithBaskets from "../resources/women-with-baskets.jpg";
 import womanHoldingNuts from "../resources/woman-holding-nuts.jpg";
 import basketWithSeeds from "../resources/basket-with-seeds.jpg";
 import smilingWoman from "../resources/smiling-woman.jpg";
 import oils from "../resources/oils.jpg";
-import kalahariOilIn50Ml from "../resources/kalahari-oil-in-50ml.jpg";
-import oilIn1l from "../resources/oil-in-1l.jpg";
 import tree from "../resources/tree.jpg";
 import villagersWithMonica from "../resources/villagers-with-monica.jpg";
 import villagersWithMonica2 from "../resources/villagers-with-monica-2.jpg";
@@ -71,29 +70,7 @@ export default function Home() {
 
             <section className="productsSection">
                 <h2>Products</h2>
-
-                <div className="productsContainer">
-
-                    <div className="productContainer">
-                        <img className="image" src={kalahariOilIn50Ml} alt="" />
-                        <h5>Consumer Products</h5>
-                        <p className="description">Description</p>
-                        <button className="button">
-                            See Our Products
-                        </button>
-                    </div>
-
-                    <div className="productContainer">
-                        <img className="image" src={oilIn1l} alt="" />
-                        <h5>Cosmetic Ingredients</h5>
-                        <p className="description">Description</p>
-                        <button className="button">
-                            See Our Products
-                        </button>
-                    </div>
-
-                </div>
-
+                <ProductsComponent />
             </section>
 
             <section className="reviewsSection">

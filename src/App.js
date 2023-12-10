@@ -6,7 +6,7 @@ import "./styles/global.css";
 import "./styles/variables.css";
 
 import Home from "./pages/Home.js";
-import Products from "./pages/Products";
+import ProductsPage from "./pages/ProductsPage";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Header />
         <Routes>
           <Route path = "/" element = { <Home /> } />
-          <Route path = "/products" element = { <Products /> } />
+          <Route path = "/products" element = { <ProductsPage /> } />
           <Route path = "/contact" element = { <Home /> } />
           <Route path = "/about" element = { <Home /> } />
           <Route path = "/privacy" element = { <Home /> } />
