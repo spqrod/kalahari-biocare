@@ -1,7 +1,7 @@
 import "../styles/home.css"
 import Slider from "../components/Slider";
 import ContactForm from "../components/ContactFrom";
-import ProductsComponent from "../components/ProductsComponent";
+import ProductCategoriesComponent from "../components/ProductCategoriesComponent";
 import womenWithBaskets from "../resources/women-with-baskets.jpg";
 import womanHoldingNuts from "../resources/woman-holding-nuts.jpg";
 import basketWithSeeds from "../resources/basket-with-seeds.jpg";
@@ -70,7 +70,7 @@ export default function Home() {
 
             <section className="productsSection">
                 <h2>Products</h2>
-                <ProductsComponent />
+                <ProductCategoriesComponent />
             </section>
 
             <section className="reviewsSection">
