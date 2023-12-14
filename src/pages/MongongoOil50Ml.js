@@ -8,7 +8,9 @@ import regenerationIcon from "../resources/regeneration-icon.svg";
 import restructuringIcon from "../resources/restructuring-icon.svg";
 import leftArrow from "../resources/left-arrow.svg";
 import rightArrow from "../resources/right-arrow.svg";
-import workerWithMongongoOilBarrels from "../resources/worker-with-mongongo-oil-barrels.jpg";
+import workerWithMongongoOilBarrels from "../resources/product-images/mongongo-oil-50ml/worker-with-mongongo-oil-barrels.jpg";
+import mongongoTree from "../resources/product-images/mongongo-oil-50ml/mongongo-tree.jpg";
+import handWithNuts from "../resources/product-images/mongongo-oil-50ml/hand-with-nuts.jpg";
 import { useEffect } from "react";
 
 export default function MongongoOil50Ml() {
@@ -94,15 +96,32 @@ export default function MongongoOil50Ml() {
             <section className="additionalInfoSection">
                 <div className="additionalInfoContainer">
                     <div className="textContainer">
-                        <h3>How we make it</h3>
+                        <h3>How We Make It</h3>
                         <p>
                             The frits are collected from the wild mainly by women. The oil is carefully cold Buttoned to order. This oil is certified Organic by Ecocert SA and traded according to UN BioTrade Principles and Criteria for use of Terrestrial Biodiversity.
                         </p>
                     </div>
                     <img className="image" src={workerWithMongongoOilBarrels} alt="" />
                 </div>
+                <div className="additionalInfoContainer">
+                    <div className="textContainer">
+                        <h3>Mongongo Tree</h3>
+                        <p>
+                            The Mongongo tree is a large, straight-trunked, deciduous tree that grows to a height of 15m or taller. On average, each tree gives 30 kg of fruit. Each fruit contains normally one and sometimes two kernels. The species is found mainly in deep, well-drained Kalahari Sands along the Zambezi River Valley in Southern Africa.
+                        </p>
+                    </div>
+                    <img className="image" src={mongongoTree} alt="" />
+                </div>
+                <div className="additionalInfoContainer">
+                    <div className="textContainer">
+                        <h3>Traditional Use</h3>
+                        <p>
+                            The Tonga, the Lozi and the Luvale tribes of Zambia have used the Mongongo tree and its fruit for generations. The trunk of the tree to make dugout canoes and drums, and the timber is used for carvings. The entire fruit is used. The nutritious kernel is pounded and used in food. The oil is extracted and used in cooking and as a moisturiser that protects the skin and hair from the harsh conditions of the Kalahari. The San people of the Kalahari have used the Mongongo fruit for centuries as part of their staple food.
+                        </p>
+                    </div>
+                    <img className="image" src={handWithNuts} alt="" />
+                </div>
             </section>
-
         </main>
     );
 }
