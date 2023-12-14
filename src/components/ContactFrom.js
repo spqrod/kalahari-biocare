@@ -1,9 +1,15 @@
 import "../styles/contactForm.css";
 
-export default function ContactForm() {
+export default function ContactForm({isDarkVariant}) {
+
+    let formClassName;
+    if (isDarkVariant)
+        formClassName = "contactForm dark";
+    else
+        formClassName = "contactForm";
+
     return (
-        <form className="contactForm" action="">
-            <h2>Contact Us</h2>
+        <form className={formClassName} action="">
             <div className="fieldsContainer">
                 <div className="labelAndInputContainer">
                     <label htmlFor="name">Name:</label>
@@ -22,7 +28,7 @@ export default function ContactForm() {
                     <input type="text" id="message" />
                 </div>
             </div>
-            <button className="button">Contact Us</button>
+            <button className="button yellow">Contact Us</button>
         </form>
     );
 }

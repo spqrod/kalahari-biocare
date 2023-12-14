@@ -28,7 +28,6 @@
                 border: none;
                 background: none;
             }
-
         }
     }
 
@@ -38,4 +37,26 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
+    &.dark {
+        
+        & h2 {
+            color: var(--normal-text);
+        }
+        .fieldsContainer {
+            border: var(--border-2);
+
+            .labelAndInputContainer {
+                border-bottom: var(--border-2);
+            }
+
+            & label {
+                color: var(--normal-text);
+            }
+            & input {
+                color: var(--normal-text);
+            }
+        }
+    }
 }
+

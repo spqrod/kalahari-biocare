@@ -7,8 +7,7 @@
     --medium-gap: 16px;
     --small-gap: 8px;
 
-    --border-radius: 2px;
-    --border-white: 1px solid white;
+
 
     --h1-font-size: 53px;
     --h2-font-size: 46px;
@@ -20,6 +19,9 @@
     --transition: 0.3s;
     --border: 0.5px solid black;
     --border-2: 2px solid var(--yellow-2);
+    --border-radius: 2px;
+    --border-white: 1px solid white;
+    --border-black: 1px solid var(--normal-text);
 
     --green-1: #648149;
     --green-2: #4E6C31;

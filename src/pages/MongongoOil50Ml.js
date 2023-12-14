@@ -92,7 +92,7 @@ export default function MongongoOil50Ml() {
                     <p>
                         Package: <b>50 ml.</b>
                     </p>
-                    <button className="button-yellow">Contact For Pricing</button>
+                    <button className="button yellow">Contact For Pricing</button>
                 </div>
             </section>
             <section className="additionalInfoSection">
