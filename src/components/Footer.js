@@ -32,14 +32,14 @@ export default function Footer() {
             </div>
 
             <nav className="menuContainer">
-                <NavLink to = "/Home" >
+                <NavLink to = "/" >
                     Home
                 </NavLink>
                 <NavLink to = "/products" >
                     Products
                 </NavLink>
-                <NavLink to = "/contacts" >
-                    Contacts
+                <NavLink to = "/contact" >
+                    Contact
                 </NavLink>
                 <NavLink to = "/about" >
                     About

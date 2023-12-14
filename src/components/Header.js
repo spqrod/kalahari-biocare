@@ -15,8 +15,8 @@ export default function Header() {
                 <NavLink to = "/products" >
                     Products
                 </NavLink>
-                <NavLink to = "/contacts" >
-                    Contacts
+                <NavLink to = "/contact" >
+                    Contact
                 </NavLink>
                 <NavLink to = "/about" >
                     About

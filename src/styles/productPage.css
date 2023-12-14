@@ -4,8 +4,10 @@
         display: grid;
         gap: var(--big-gap);
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content 1fr;
 
         .photoContainer {
+            grid-row: 2 / 3;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 4fr 1fr;
@@ -59,6 +61,7 @@
         }
 
         .textContainer {
+            grid-row: 2 / 3;
             border: var(--border-2);
             padding: var(--big-gap);
             position: relative;

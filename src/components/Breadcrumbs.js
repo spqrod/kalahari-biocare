@@ -28,7 +28,7 @@ export default function Breadcrumbs() {
     };
     
     return (
-        <div>
+        <div className="breadcrumbs">
             {linkArray}
         </div>
     );

@@ -12,6 +12,7 @@ import workerWithMongongoOilBarrels from "../resources/product-images/mongongo-o
 import mongongoTree from "../resources/product-images/mongongo-oil-50ml/mongongo-tree.jpg";
 import handWithNuts from "../resources/product-images/mongongo-oil-50ml/hand-with-nuts.jpg";
 import { useEffect } from "react";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function MongongoOil50Ml() {
 
@@ -49,6 +50,7 @@ export default function MongongoOil50Ml() {
     return (
         <main className="productPage">
             <section className="mainInfoSection">
+                <Breadcrumbs />
                 <div className="photoContainer">
                     <div className="mainImageAndArrowsContainer">
                         <img className="image main" src="" alt="" />

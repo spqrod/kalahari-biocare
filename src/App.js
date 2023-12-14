@@ -6,8 +6,13 @@ import "./styles/global.css";
 import "./styles/variables.css";
 
 import Home from "./pages/Home.js";
+import About from "./pages/About.js";
+import Contact from "./pages/Contact.js";
+import Privacy from "./pages/Privacy.js";
+import Terms from "./pages/Terms.js";
 import ProductCategoriesPage from "./pages/ProductCategoriesPage";
 import ConsumerProducts from "./pages/ConsumerProducts.js";
+import CosmeticIngredients from "./pages/CosmeticIngredients.js";
 import MongongoOil50Ml from "./pages/MongongoOil50Ml.js";
 
 function App() {
@@ -20,11 +25,12 @@ function App() {
           <Route path = "/" element = { <Home /> } />
           <Route path = "/products" element = { <ProductCategoriesPage /> } />
           <Route path = "/products/consumer-products" element = { <ConsumerProducts /> } />
+          <Route path = "/products/cosmetic-ingredients" element = { <CosmeticIngredients /> } />
           <Route path = "/products/consumer-products/mongongo-oil-50ml" element = { <MongongoOil50Ml /> } />
-          <Route path = "/contact" element = { <Home /> } />
-          <Route path = "/about" element = { <Home /> } />
-          <Route path = "/privacy" element = { <Home /> } />
-          <Route path = "/terms" element = { <Home /> } />
+          <Route path = "/contact" element = { <Contact /> } />
+          <Route path = "/about" element = { <About /> } />
+          <Route path = "/privacy" element = { <Privacy /> } />
+          <Route path = "/terms" element = { <Terms /> } />
         </Routes>
       <Footer />
       </Router>
