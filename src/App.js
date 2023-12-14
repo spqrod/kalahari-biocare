@@ -6,8 +6,9 @@ import "./styles/global.css";
 import "./styles/variables.css";
 
 import Home from "./pages/Home.js";
-import ProductsPage from "./pages/ProductsPage";
+import ProductCategoriesPage from "./pages/ProductCategoriesPage";
 import ConsumerProducts from "./pages/ConsumerProducts.js";
+import MongongoOil50Ml from "./pages/MongongoOil50Ml.js";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
       <Header />
         <Routes>
           <Route path = "/" element = { <Home /> } />
-          <Route path = "/products" element = { <ProductsPage /> } />
+          <Route path = "/products" element = { <ProductCategoriesPage /> } />
           <Route path = "/products/consumer-products" element = { <ConsumerProducts /> } />
+          <Route path = "/products/consumer-products/mongongo-oil-50ml" element = { <MongongoOil50Ml /> } />
           <Route path = "/contact" element = { <Home /> } />
           <Route path = "/about" element = { <Home /> } />
           <Route path = "/privacy" element = { <Home /> } />

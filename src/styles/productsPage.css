@@ -1,8 +1,22 @@
 .productsPage {
-    
-    .productsSection {
-        background-color: var(--yellow-1);
+    background-color: var(--yellow-1);
 
+    .productsContainer {
+        display: flex;
+        justify-content: start;
         
+        .productContainer {
+            border: 1px solid white;
+            padding: var(--big-gap);
+            text-decoration: none;
+    
+            .image {
+                max-width: 200px;
+            }
+    
+            .description {
+                text-align: center;
+            }
+        }
     }
 }

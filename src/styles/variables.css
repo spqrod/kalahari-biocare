@@ -12,12 +12,14 @@
 
     --h1-font-size: 53px;
     --h2-font-size: 46px;
+    --h3-font-size: 38px;
     --h5-font-size: 24px;
     --h6-font-size: 18px;
     --body-font-size: 18px;
 
     --transition: 0.3s;
     --border: 0.5px solid black;
+    --border-2: 2px solid var(--yellow-2);
 
     --green-1: #648149;
     --green-2: #4E6C31;

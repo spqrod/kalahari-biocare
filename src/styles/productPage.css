@@ -1,0 +1,114 @@
+.productPage {
+
+    .mainInfoSection {
+        display: grid;
+        gap: var(--big-gap);
+        grid-template-columns: 1fr 1fr;
+
+        .photoContainer {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 4fr 1fr;
+            gap: var(--big-gap);
+
+            .mainImageAndArrowsContainer {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                position: relative;
+
+                .image.main {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .leftArrow {
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                }
+                
+                .rightArrow {
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                }
+            }
+
+
+            .thumbnailsContainer {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                justify-content: space-between;
+                gap: var(--medium-gap);
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    object-position: center;
+                    object-fit: cover;
+                }
+            }
+
+        }
+
+        .textContainer {
+            border: var(--border-2);
+            padding: var(--big-gap);
+            position: relative;
+
+            & h5 {
+                color: var(--yellow-2);
+                text-align: left;
+                padding-bottom: var(--small-gap);
+            }
+
+            .propertiesList {
+                list-style: none;
+
+                .propertyIcon {
+                    padding-right: var(--small-gap);
+                }
+            }
+
+            & p, .propertiesList {
+                padding-bottom: var(--big-gap);
+            }
+
+            .button-yellow {
+                position: absolute;
+                left: 50%;
+                bottom: calc(var(--button-height) / 2 * (-1));
+                transform: translateX(-50%);
+            }
+        }
+    }
+
+    .additionalInfoSection {
+        
+        .additionalInfoContainer {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: var(--very-big-gap);
+
+            .textContainer {
+                grid-column: 1 / 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                & h3 {
+                    padding-bottom: var(--medium-gap);
+                }
+            }
+
+            .image {
+                grid-column: 2 / 3;
+                width: 100%;
+            }
+
+        }
+    }
+}
