@@ -13,6 +13,7 @@ import mongongoTree from "../resources/product-images/mongongo-oil-50ml/mongongo
 import handWithNuts from "../resources/product-images/mongongo-oil-50ml/hand-with-nuts.jpg";
 import { useEffect } from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
+import { Link } from "react-router-dom";
 
 export default function MongongoOil50Ml() {
 
@@ -92,7 +93,9 @@ export default function MongongoOil50Ml() {
                     <p>
                         Package: <b>50 ml.</b>
                     </p>
-                    <button className="button yellow">Contact For Pricing</button>
+                    <Link to="/contact">
+                        <button className="button yellow">Contact For Pricing</button>
+                    </Link>
                 </div>
             </section>
             <section className="additionalInfoSection">

@@ -28,7 +28,7 @@ export default function ContactForm({isDarkVariant}) {
                     <input type="text" id="message" />
                 </div>
             </div>
-            <button className="button yellow">Contact Us</button>
+            <button className="button">Contact Us</button>
         </form>
     );
 }

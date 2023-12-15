@@ -19,6 +19,7 @@ import logoEu from "../resources/logo-eu.svg";
 import logoUsda from "../resources/logo-usda.svg";
 import logoSaeopa from "../resources/logo-saeopa.svg";
 import logoEcocert from "../resources/logo-ecocert.svg";
+import { Link } from "react-router-dom";
 
 
 export default function Home() {
@@ -33,9 +34,11 @@ export default function Home() {
                         We produce the best organic African oils found on the world market
                     </p>
                 </div>
-                <button>
-                    See Our Products
-                </button>
+                <Link to="/products">
+                    <button>
+                            See Our Products
+                    </button>
+                </Link>
             </section>
 
             <section className="welcomeSection">
@@ -152,11 +155,11 @@ export default function Home() {
 
             <section className="contactSection">
                 <div className="contactContainer">
+                    <h2>Contact Us</h2>
                     <ContactForm />
 
                 </div>
                 <div className="imageContainer">
-                    
                 </div>
             </section>
 

@@ -12,7 +12,7 @@ export default function ProductCategoriesComponent() {
                 <h5>Consumer Products</h5>
                 <p className="description">Description</p>
                 <button className="button">
-                    See Our Products
+                    See Consumer Products
                 </button>
             </Link>
             <Link className="productContainer" to="/products/cosmetic-ingredients">
@@ -20,7 +20,7 @@ export default function ProductCategoriesComponent() {
                 <h5>Cosmetic Ingredients</h5>
                 <p className="description">Description</p>
                 <button className="button">
-                    See Our Products
+                    See Cosmetic Ingredients
                 </button>
             </Link>
         </div>

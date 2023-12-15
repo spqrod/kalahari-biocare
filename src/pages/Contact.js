@@ -38,7 +38,7 @@ export default function Contact() {
                         <Link to="https://wa.me/46761191516">
                             <img src={whatsappIcon} alt="" />
                         </Link>
-                        <Link to="https://wa.me/46761191516">
+                        <Link to="https://www.facebook.com/profile.php?id=100064365781430">
                             <img src={facebookIcon} alt="" />
                         </Link>
                         <Link to="https://wa.me/46761191516">

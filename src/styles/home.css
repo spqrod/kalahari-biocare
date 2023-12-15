@@ -254,8 +254,14 @@
             padding-left: var(--side-padding-for-sections);
             padding-top: var(--big-gap);
             padding-bottom: var(--big-gap);
+            padding-right: var(--big-gap);
             display: flex;
+            flex-direction: column;
             justify-content: center;
+
+            & h2 {
+                color: white;
+            }
         }
 
         .imageContainer {
