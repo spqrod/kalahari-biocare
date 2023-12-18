@@ -20,13 +20,15 @@ import logoUsda from "../resources/logo-usda.svg";
 import logoSaeopa from "../resources/logo-saeopa.svg";
 import logoEcocert from "../resources/logo-ecocert.svg";
 import { Link } from "react-router-dom";
-
+import { InitialTransition } from "../components/InitialTransition";
 
 export default function Home() {
 
     return (
-        <main className="homePage">
-
+        <main 
+            className="homePage">
+            <InitialTransition />
+            
             <section className="heroSection">
                 <h1>Kalahari Biocare</h1>
                 <div className="square">
@@ -161,7 +163,7 @@ export default function Home() {
                 </div>
                 <div className="imageContainer">
                 </div>
-            </section>
+            </section> 
 
         </main>
     );

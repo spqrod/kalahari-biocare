@@ -14,6 +14,7 @@ import handWithNuts from "../resources/product-images/mongongo-oil-50ml/hand-wit
 import { useEffect } from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { Link } from "react-router-dom";
+import { InitialTransition } from "../components/InitialTransition";
 
 export default function MongongoOil50Ml() {
 
@@ -50,6 +51,7 @@ export default function MongongoOil50Ml() {
 
     return (
         <main className="productPage">
+            <InitialTransition />
             <section className="mainInfoSection">
                 <Breadcrumbs />
                 <div className="photoContainer">

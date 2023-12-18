@@ -24,13 +24,13 @@ export default function ContactForm({isDarkVariant}) {
             e.preventDefault();
             // const captchaToken = captchaRef.current.getValue();
             // captchaRef.current.reset();
-            const { name, email, phone, message } = e.target.elements;
+            const { name, email, phone, formMessage } = e.target.elements;
             
             const formData = {
                 name: name.value,
                 email: email.value,
                 phone: phone.value,
-                message: message.value
+                formMessage: formMessage.value
             }
             
             controller.sendEmail(formData);
@@ -69,11 +69,11 @@ export default function ContactForm({isDarkVariant}) {
             <div className="fieldsContainer">
                 <div className="labelAndInputContainer">
                     <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" name="name" />
+                    <input type="text" id="name" />
                 </div>
                 <div className="labelAndInputContainer">
                     <label htmlFor="name">Email:</label>
-                    <input type="email" id="email" name="email"/>
+                    <input type="email" id="email" />
                 </div>
                 <div className="labelAndInputContainer">
                     <label htmlFor="name">Phone:</label>

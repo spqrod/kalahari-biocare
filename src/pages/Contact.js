@@ -6,10 +6,13 @@ import instagramIcon from "../resources/instagram-icon.svg";
 import facebookIcon from "../resources/facebook-icon.svg";
 import locationIcon from "../resources/location-icon.svg";
 import callIcon from "../resources/call-icon.svg";
+import { InitialTransition } from "../components/InitialTransition";
 
 export default function Contact() {
     return (
         <main className="contactPage">
+        <InitialTransition />
+
             <section className="contactSection">
                 <div className="contactFormContainer">
                     <h2>Contact Kalahari BioCare</h2>

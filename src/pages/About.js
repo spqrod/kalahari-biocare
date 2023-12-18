@@ -8,12 +8,12 @@ import greyson from "../resources/team/greyson.jpeg";
 import monicaAtTraining from "../resources/monica-at-training.jpg";
 import monicaWithVillagers from "../resources/monica-with-villagers.jpg";
 import monicaWithVillagers2 from "../resources/monica-with-villagers-2.jpg";
-
+import { InitialTransition } from "../components/InitialTransition";
 
 export default function About() {
     return (
         <main className="aboutPage">
-
+            <InitialTransition />
             <section className="mainSection">
                 <div className="textContainer">
                     <h1>About Us</h1>
