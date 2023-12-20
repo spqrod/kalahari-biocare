@@ -1,8 +1,10 @@
 import "../styles/contactForm.css";
+import { useRef, useState } from "react";
 
-export default function ContactForm({isDarkVariant}) {
+export default function ContactForm() {
 
-
+    const [statusText, setStatusText] = useState("");
+    
     const api = {
         sendEmail(data) {
             const fetchURL = "/api/email";
@@ -13,9 +15,11 @@ export default function ContactForm({isDarkVariant}) {
                 },
                 body: JSON.stringify(data)
             }
-            console.log(fetchOptions.body);
             return fetch(fetchURL, fetchOptions)
-                .then(res => res.json());
+                .then(res => res.json())
+                .then(res => {
+                    if (res.success) return true
+                });
         }
     }
 
@@ -33,58 +37,56 @@ export default function ContactForm({isDarkVariant}) {
                 formMessage: formMessage.value
             }
             
-            controller.sendEmail(formData);
+            display.switchFormForStatusText();
+            setStatusText("Sending message...");
+            controller.sendEmail(formData)
+                .then(success => {
+                    if (success) 
+                        setStatusText("Thank you for your message! We'll get back soon.");
+                    else 
+                        setStatusText("Error sending your message. Please contact us through other means. We are sorry for the inconvenience.");
+                })
         },
 
         sendEmail(formData) {
-            // controller.setDialogTextForMessageResult("Sending message...");
-            // display.showDialog();
-            api.sendEmail({ ...formData })
-                .then((response) => {
-                    // display.resetFormAfterSubmit();
-                    // display.makeButtonInactive();
-                    // controller.updateDialogTextWithMessageResult(response.success);
-                    console.log("success");
-                }).catch(error => console.log(error));
+            return api.sendEmail({ ...formData })
+                .catch(error => console.log(error));
         },
-        setDialogTextForMessageResult() {
-
-        }
     }
 
     const display = {
-        showDialog() {
-
+        switchFormForStatusText() {
+            const fieldsContainer = document.querySelector(".contactForm .fieldsContainer");
+            fieldsContainer.classList.toggle("hidden");
+            const button = document.querySelector(".contactForm .button");
+            button.classList.toggle("hidden");
+            const statusText = document.querySelector(".contactForm .statusText");
+            statusText.classList.toggle("hidden");
         },
     }
 
-    let formClassName;
-    if (isDarkVariant)
-        formClassName = "contactForm dark";
-    else
-        formClassName = "contactForm";
-
     return (
-        <form className={formClassName} onSubmit = {controller.handleSubmit} action="">
+        <form className={"contactForm"} onSubmit = {controller.handleSubmit} action="">
             <div className="fieldsContainer">
                 <div className="labelAndInputContainer">
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" />
                 </div>
                 <div className="labelAndInputContainer">
-                    <label htmlFor="name">Email:</label>
+                    <label htmlFor="email">Email:</label>
                     <input type="email" id="email" />
                 </div>
                 <div className="labelAndInputContainer">
-                    <label htmlFor="name">Phone:</label>
+                    <label htmlFor="phone">Phone:</label>
                     <input type="tel" id="phone" />
                 </div>
                 <div className="labelAndInputContainer">
-                    <label htmlFor="name">Message:</label>
-                    <input type="text" id="message" />
+                    <label htmlFor="formMessage">Message:</label>
+                    <input type="text" id="formMessage" />
                 </div>
             </div>
             <button className="button">Contact Us</button>
+            <p className="statusText hidden">{statusText}</p>
         </form>
     );
 }
