@@ -73,7 +73,7 @@ export default function Slider() {
     return (
         <div className="sliderContainer">
             <div className="reviewsContainer">
-                <div className="reviewContainer" reviewId="0">
+                <div className="reviewContainer" reviewid="0">
                     <img className="quoteIcon" src={quoteIcon} alt="" />
                         <p className="recommendedText">Recommended Kalahari Natural Oils as a supplier</p>
                         <div className="starsContainer">
@@ -90,7 +90,7 @@ export default function Slider() {
                             woribeauty.com
                         </h6>
                 </div>
-                <div className="reviewContainer hidden" reviewId="1">
+                <div className="reviewContainer hidden" reviewid="1">
                     <img className="quoteIcon" src={quoteIcon} alt="" />
                         <p className="recommendedText">Recommended Kalahari Natural Oils as a supplier</p>
                         <div className="starsContainer">
@@ -108,7 +108,7 @@ export default function Slider() {
                         </h6>
 
                 </div>
-                <div className="reviewContainer hidden" reviewId="2">
+                <div className="reviewContainer hidden" reviewid="2">
                     <img className="quoteIcon" src={quoteIcon} alt="" />
                         <p className="recommendedText">Recommended Kalahari Natural Oils as a supplier</p>
                         <div className="starsContainer">
@@ -125,7 +125,7 @@ export default function Slider() {
                             A Japanese customer
                         </h6>
                 </div>
-                <div className="reviewContainer hidden" reviewId="3">
+                <div className="reviewContainer hidden" reviewid="3">
                     <img className="quoteIcon" src={quoteIcon} alt="" />
                         <p className="recommendedText">Recommended Kalahari Natural Oils as a supplier</p>
                         <div className="starsContainer">

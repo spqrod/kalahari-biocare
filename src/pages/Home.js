@@ -28,7 +28,6 @@ export default function Home() {
         <main 
             className="homePage">
             <InitialTransition />
-            
             <section className="heroSection">
                 <h1>Kalahari Biocare</h1>
                 <div className="square">
@@ -42,6 +41,7 @@ export default function Home() {
                     </button>
                 </Link>
             </section>
+{/*             
 
             <section className="welcomeSection">
                 <h2>Welcome to Kalahari Natural Oils!</h2>
@@ -163,7 +163,7 @@ export default function Home() {
                 </div>
                 <div className="imageContainer">
                 </div>
-            </section> 
+            </section>  */}
 
         </main>
     );

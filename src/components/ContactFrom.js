@@ -45,12 +45,12 @@ export default function ContactForm() {
                         setStatusText("Thank you for your message! We'll get back soon.");
                     else 
                         setStatusText("Error sending your message. Please contact us through other means. We are sorry for the inconvenience.");
-                })
+                    })
+                    .catch(error => setStatusText("Error sending your message. Please contact us through other means. We are sorry for the inconvenience."));
         },
 
         sendEmail(formData) {
-            return api.sendEmail({ ...formData })
-                .catch(error => console.log(error));
+            return api.sendEmail({ ...formData });
         },
     }
 

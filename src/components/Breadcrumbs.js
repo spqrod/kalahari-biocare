@@ -10,7 +10,7 @@ export default function Breadcrumbs() {
         linkArray.push(
             <>
                 { linkArray.length > 0 ? <span> - </span> : "" }
-                <Link to={path}>{ toSentenceCase(item) }</Link>
+                <Link to={path} key={Math.random()*1000}>{ toSentenceCase(item) }</Link>
             </>
         );
     });
