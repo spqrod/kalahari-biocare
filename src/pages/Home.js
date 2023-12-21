@@ -41,7 +41,6 @@ export default function Home() {
                     </button>
                 </Link>
             </section>
-{/*             
 
             <section className="welcomeSection">
                 <h2>Welcome to Kalahari Natural Oils!</h2>
@@ -91,6 +90,8 @@ export default function Home() {
 
             </section>
 
+
+
             <section className="feature1Section">
 
                 <img className="image villagersWithMonicaImage1" src={villagersWithMonica} alt="villagers with monica" />
@@ -107,7 +108,11 @@ export default function Home() {
                 <div className="textContentContainer">
                     <h2>Valuing Forests</h2>
                     <p>
-                        The Buttonure on the forests is growing through unsustainable timber logging, charcoal burning, illegal poaching and shifting cultivation practices.<br/><br/>
+                        The Buttonure on the forests is growing through unsustainable timber logging, charcoal burning, illegal poaching and shifting cultivation practices.
+                    </p>
+                </div>
+                <div className="textContentContainer2">
+                    <p>
                         We give value to trees through active and continuous demand for produce. Our supplier groups process high quality raw materials for our oils maintaining sustainable harvesting practices.
                     </p>
                 </div>
@@ -163,7 +168,8 @@ export default function Home() {
                 </div>
                 <div className="imageContainer">
                 </div>
-            </section>  */}
+            </section> 
+
 
         </main>
     );

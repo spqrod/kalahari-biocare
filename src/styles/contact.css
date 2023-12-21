@@ -8,7 +8,13 @@
         padding: 0;
         min-height: calc(100vh - var(--header-height));
 
+        @media only screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
         .contactFormContainer {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
             background-color: var(--yellow-2);
             padding-left: var(--side-padding-for-sections);
             padding-top: var(--big-gap);
@@ -29,6 +35,12 @@
             gap: var(--big-gap);
             flex-direction: column;
             align-items: start;
+            display: none;
+
+            @media only screen and (max-width: 768px) { 
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
             
             .contactsContainer {
                 grid-column: 2 / 3;

@@ -27,6 +27,10 @@ header {
         justify-content: center;
         gap: var(--big-gap);
 
+        .closeButtonForMobile {
+            display: none;
+        }
+
         @media only screen and (max-width: 768px) {
             visibility: hidden;
             display: flex;
@@ -51,10 +55,10 @@ header {
 
             & * {
                 font-size: 22px;
-                font-weight: 400;
             }
 
             .closeButtonForMobile {
+                display: block;
                 position: absolute;
                 top: calc(var(--big-gap));
                 right: var(--big-gap);
@@ -72,7 +76,6 @@ header {
             background-color: black;
             opacity: 0.5;
             z-index: 3;
-            /* pointer-events: none; */
         }
     }
 
@@ -111,6 +114,10 @@ header {
 
 
 @media only screen and (max-width: 768px) {
+    body {
+        overflow-x: clip;
+    }
+    
     body.mobileMenuRevealed {
         overflow: clip;
     }

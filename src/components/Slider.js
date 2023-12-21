@@ -72,6 +72,7 @@ export default function Slider() {
 
     return (
         <div className="sliderContainer">
+            <div className="reviewsContainerContainer">
             <div className="reviewsContainer">
                 <div className="reviewContainer" reviewid="0">
                     <img className="quoteIcon" src={quoteIcon} alt="" />
@@ -108,6 +109,7 @@ export default function Slider() {
                         </h6>
 
                 </div>
+                
                 <div className="reviewContainer hidden" reviewid="2">
                     <img className="quoteIcon" src={quoteIcon} alt="" />
                         <p className="recommendedText">Recommended Kalahari Natural Oils as a supplier</p>
@@ -142,6 +144,7 @@ export default function Slider() {
                             Mary Jo K - USA
                         </h6>
                 </div>
+            </div>
             </div>
             <div className="paginationContainer">
                 <img src={arrowLeft} onClick={controller.handleLeftArrowClick} alt="left arrow" />

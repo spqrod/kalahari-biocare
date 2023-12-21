@@ -66,7 +66,7 @@ export default function ContactForm() {
     }
 
     return (
-        <form className={"contactForm"} onSubmit = {controller.handleSubmit} action="">
+        <form className="contactForm" onSubmit = {controller.handleSubmit} action="">
             <div className="fieldsContainer">
                 <div className="labelAndInputContainer">
                     <label htmlFor="name">Name:</label>

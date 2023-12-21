@@ -1,20 +1,33 @@
 .sliderContainer {
-    min-height: 350px;
+    /* min-height: 350px; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    border: 5px solid yellow;
+
+    .reviewsContainerContainer {
+        width: 100%;
+    }
 
     .reviewsContainer {
         position: relative;
-        width: 100%;
+        border: 1px solid green;
+
 
             .reviewContainer {
+
+                border: 1px solid blue;
+
                 width: calc(50vw - var(--side-padding-for-sections) + 20vw);
 
                 padding: var(--big-gap) var(--big-gap) var(--big-gap) 0;
                 position: absolute;
                 background-color: white;
                 animation-duration: 1s;
+
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                }
 
                 .quoteIcon {
                     position: absolute;
@@ -70,6 +83,9 @@
         display: flex;
         align-items: center;
         gap: var(--medium-gap);
+
+        border: 3px solid red;
+        z-index: 3;
         
         .paginationText {
             font-size: 36px;

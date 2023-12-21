@@ -9,7 +9,7 @@ export default function ProductCategoriesComponent() {
         <div className="productCategoriesContainer">
             <Link className="productContainer" to="/products/consumer-products">
                 <img className="image" src={kalahariOilIn50Ml} alt="" />
-                <h5>Consumer Products</h5>
+                <h5 className="name">Consumer Products</h5>
                 <p className="description">Description</p>
                 <button className="button">
                     See Consumer Products
@@ -17,7 +17,7 @@ export default function ProductCategoriesComponent() {
             </Link>
             <Link className="productContainer" to="/products/cosmetic-ingredients">
                 <img className="image" src={oilIn1l} alt="" />
-                <h5>Cosmetic Ingredients</h5>
+                <h5 className="name">Cosmetic Ingredients</h5>
                 <p className="description">Description</p>
                 <button className="button">
                     See Cosmetic Ingredients

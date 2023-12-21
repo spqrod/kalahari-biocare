@@ -7,8 +7,6 @@
     --medium-gap: 16px;
     --small-gap: 8px;
 
-
-
     --h1-font-size: 53px;
     --h2-font-size: 46px;
     --h3-font-size: 38px;
@@ -32,6 +30,13 @@
     --normal-text: #262626;
 
     --button-height: 45px;
+
+    @media only screen and (max-width: 768px) {
+        --h1-font-size: 30px;
+        --h2-font-size: 26px;
+        --h3-font-size: 23px;
+        --h5-font-size: 20px;
+    }
 }
 
 @font-face {
