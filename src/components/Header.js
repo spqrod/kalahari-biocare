@@ -43,9 +43,11 @@ export default function Header() {
     return (
         <header>
 
-            <Link className="logoContainer" to="/">
-                <img src={logo}  className="logo" alt="" />
-            </Link>
+            <div className="logoContainer">
+                <Link className="link" to="/">
+                    <img src={logo}  className="logo" alt="" />
+                </Link>
+            </div>
 
             <nav className="menuContainer">
                 <div className="closeButtonForMobile" onClick={display.handleCloseButtonForMobileClick}>
