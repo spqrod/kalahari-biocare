@@ -4,8 +4,15 @@
     padding: 0;
 }
 
-header, section, footer {
+body {
     overflow-x: clip;
+}
+
+section {
+    overflow-x: clip;
+}
+
+header, section, footer {
     padding-left: var(--side-padding-for-sections);
     padding-right: var(--side-padding-for-sections);
 }
