@@ -3,8 +3,11 @@ import starIcon from "../resources/star.svg";
 import arrowLeft from "../resources/arrow-left.svg";
 import arrowRight from "../resources/arrow-right.svg";
 import "../styles/slider.css";
+import { useEffect, useState } from "react";
 
 export default function Slider() {
+
+    const [sliderContainerWidth, setSliderContainerWidth] = useState();
 
     let currentReviewIndex = 0;
     let arrowButtonsDisabled = false;
@@ -13,11 +16,11 @@ export default function Slider() {
         handleRightArrowClick() {
             if (currentReviewIndex < 3 && !arrowButtonsDisabled) {
                 arrowButtonsDisabled = true;
-                controller.moveCurrentReviewLeft();
-                controller.revealReviewFromRight(++currentReviewIndex);
+                controller.moveReviewsContainerLeft();
+                controller.hideCurrentReview();
+                controller.unhideNextReview(++currentReviewIndex);
                 controller.updatePagination();
                 setTimeout(() => {
-                    controller.clearClasses();
                     arrowButtonsDisabled = false;
                 }, 1000);
             }
@@ -25,54 +28,52 @@ export default function Slider() {
         handleLeftArrowClick() {
             if (currentReviewIndex > 0 && !arrowButtonsDisabled) {
                 arrowButtonsDisabled = true;
-                controller.moveCurrentReviewRight();
-                controller.revealReviewFromLeft(--currentReviewIndex);
+                controller.moveReviewsContainerRight();
+                controller.hideCurrentReview();
+                controller.unhideNextReview(--currentReviewIndex);
                 controller.updatePagination();
                 setTimeout(() => {
-                    controller.clearClasses();
                     arrowButtonsDisabled = false;
                 }, 1000);
             }
         },
-        moveCurrentReviewLeft() { 
+        moveReviewsContainerLeft() {
+            const reviewsContainer = document.querySelector(".reviewsContainer");
+            const currentMargin = reviewsContainer.style.marginLeft = "" ? "0" : reviewsContainer.style.marginLeft.replace("px", "").replace("-", "");
+            reviewsContainer.style.marginLeft = `-${Number(currentMargin) + Number(sliderContainerWidth) * 3}px`;
+        },
+        moveReviewsContainerRight() {
+            const reviewsContainer = document.querySelector(".reviewsContainer");
+            const currentMargin = reviewsContainer.style.marginLeft = "" ? "0" : reviewsContainer.style.marginLeft.replace("px", "");
+            reviewsContainer.style.marginLeft = `${Number(currentMargin) + Number(sliderContainerWidth) * 3}px`;
+        },
+        hideCurrentReview() { 
             const currentReview = document.querySelector(`.reviewContainer[reviewId='${currentReviewIndex}']`);
-            currentReview.classList.add("moveLeft");
-            setTimeout(() => currentReview.classList.add("hidden"), 1000);
-
-        },
-        moveCurrentReviewRight() { 
-            const currentReview = document.querySelector(`.reviewContainer[reviewId='${currentReviewIndex}']`);
-            currentReview.classList.add("moveRight");
             setTimeout(() => currentReview.classList.add("hidden"), 1000);
         },
-        revealReviewFromRight(reviewId) {
+        unhideNextReview(reviewId) {
             const nextReview = document.querySelector(`.reviewContainer[reviewId='${reviewId}']`);
-            nextReview.classList.add("revealFromRight");
             nextReview.classList.remove("hidden");
-        },
-        revealReviewFromLeft(reviewId) {
-            const nextReview = document.querySelector(`.reviewContainer[reviewId='${reviewId}']`);
-            nextReview.classList.add("revealFromLeft");
-            nextReview.classList.remove("hidden");
-        },
-        clearClasses() {
-            const reviewContainers = document.querySelectorAll(".reviewContainer");
-            reviewContainers.forEach(item => {
-                item.classList.remove("moveLeft");
-                item.classList.remove("moveRight");
-                item.classList.remove("revealFromRight");
-                item.classList.remove("revealFromLeft");
-            });
         },
         updatePagination() {
             const pagination = document.querySelector(".paginationText");
             pagination.textContent = `${currentReviewIndex + 1} / 4`;
+        },
+        setInitialReviewsContainerWidth() {
+            const sliderContainer = document.querySelector(".sliderContainer");
+            setSliderContainerWidth(sliderContainer.offsetWidth);
+            const reviewsContainer = document.querySelector(".reviewsContainer");
+            reviewsContainer.style.gridTemplateColumns = `repeat(4, ${sliderContainer.offsetWidth}px)`;
+            reviewsContainer.style.gap = `${sliderContainer.offsetWidth * 2}px`;
         }
     }
 
+    useEffect(() => {
+        controller.setInitialReviewsContainerWidth();
+    }, []);
+
     return (
         <div className="sliderContainer">
-            <div className="reviewsContainerContainer">
             <div className="reviewsContainer">
                 <div className="reviewContainer" reviewid="0">
                     <img className="quoteIcon" src={quoteIcon} alt="" />
@@ -109,7 +110,6 @@ export default function Slider() {
                         </h6>
 
                 </div>
-                
                 <div className="reviewContainer hidden" reviewid="2">
                     <img className="quoteIcon" src={quoteIcon} alt="" />
                         <p className="recommendedText">Recommended Kalahari Natural Oils as a supplier</p>
@@ -144,7 +144,6 @@ export default function Slider() {
                             Mary Jo K - USA
                         </h6>
                 </div>
-            </div>
             </div>
             <div className="paginationContainer">
                 <img src={arrowLeft} onClick={controller.handleLeftArrowClick} alt="left arrow" />

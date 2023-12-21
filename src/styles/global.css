@@ -5,6 +5,7 @@
 }
 
 header, section, footer {
+    overflow-x: clip;
     padding-left: var(--side-padding-for-sections);
     padding-right: var(--side-padding-for-sections);
 }

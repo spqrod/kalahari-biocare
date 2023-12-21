@@ -37,7 +37,7 @@ header {
             flex-direction: column;
             justify-content: start;
             align-items: center;
-            box-shadow: -5px -5px 20px 1px rgb(41, 41, 40);
+            /* box-shadow: -5px -5px 20px 1px rgb(41, 41, 40); */
             height: 100vh;
             padding: var(--big-gap);
             padding-top: calc(var(--header-height) + var(--big-gap));
@@ -46,7 +46,7 @@ header {
             top: 0;
             background-color: var(--yellow-2);
             transition: var(--transition);
-            z-index: 4;
+            z-index: 10;
             
             &.revealed {
                 visibility: visible;
@@ -105,18 +105,13 @@ header {
             height: 3px;
             background-color: var(--normal-text);
             border-radius: var(--border-radius);
-
-            /* flex-direction: column; */
-            /* justify-content: center; */
         }
     }
 }
 
 
 @media only screen and (max-width: 768px) {
-    body {
-        overflow-x: clip;
-    }
+
     
     body.mobileMenuRevealed {
         overflow: clip;
