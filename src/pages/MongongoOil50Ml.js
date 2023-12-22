@@ -54,6 +54,7 @@ export default function MongongoOil50Ml() {
             <InitialTransition />
             <section className="mainInfoSection">
                 <Breadcrumbs />
+                <h1 className="name">Mongongo Oil</h1>
                 <div className="photoContainer">
                     <div className="mainImageAndArrowsContainer">
                         <img className="image main" src="" alt="" />
