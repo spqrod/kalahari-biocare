@@ -13,6 +13,7 @@ header {
     grid-template-rows: 100%;
     grid-auto-flow: column;
     align-items: center;
+    /* overflow-x: clip; */
 
     
     @media only screen and (max-width: 768px) {

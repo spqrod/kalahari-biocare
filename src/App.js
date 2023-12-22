@@ -46,7 +46,7 @@ function App() {
         <LocationProvider>
           <RoutesWithAnimation />
         </LocationProvider>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

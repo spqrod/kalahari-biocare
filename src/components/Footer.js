@@ -17,13 +17,13 @@ export default function Footer() {
             </Link>
 
             <div className="contactsContainer">
-                <div className="phoneContainer">
+                <div className="contactContainer">
                     <img className="icon" src={callIcon} alt="" />
                     <a className="text" href=""><h6>
                         +260 977521516
                     </h6></a>
                 </div>
-                <div className="addressContainer">
+                <div className="contactContainer">
                     <img className="icon" src={locationIcon} alt="" />
                     <a className="text" href=""><h6>
                         PO Box 51386, Ridgeway, Lusaka, Zambia
