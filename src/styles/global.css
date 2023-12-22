@@ -79,6 +79,7 @@ p, a, span, div, label, input {
 
 a {
     text-decoration: none;
+    color: var(--normal-text);
     cursor: pointer;
 }
 
@@ -95,7 +96,7 @@ button {
     font-weight: 400;
     font-size: 18px;
     text-decoration: none;
-
+    color: var(--normal-text);
 
     &.yellow {
         background-color: var(--yellow-2);

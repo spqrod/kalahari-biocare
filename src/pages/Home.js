@@ -168,9 +168,6 @@ export default function Home() {
                 </div>
             </section> 
 
-
-        <div className="middleLine"></div>
-
         </main>
     );
 }

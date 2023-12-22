@@ -1,6 +1,6 @@
 header {
     padding-bottom: 0.5px;
-    position: relative;
+    position: sticky;
     top: 0;
     width: 100%;
     height: var(--header-height);

@@ -6,6 +6,10 @@
         align-items: center;
         gap: var(--big-gap);
 
+        @media only screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
         & h1 {
             padding-bottom: var(--big-gap);
         }
@@ -22,6 +26,10 @@
             grid-template-columns: 1fr 1fr 1fr;
             justify-content: center;
             gap: var(--big-gap);
+
+            @media only screen and (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
             
             .teamMemberContainer {
                 border: var(--border-2);
@@ -55,6 +63,11 @@
         & p:last-of-type {
             align-self: end;
             text-align: right;
+
+            @media only screen and (max-width: 768px) {
+                text-align: left;
+            }
+    
         }
 
         .image {
