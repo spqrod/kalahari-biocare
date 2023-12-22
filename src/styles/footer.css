@@ -57,9 +57,9 @@ footer {
         display: flex;
         justify-content: center;
         gap: var(--big-gap);
-        justify-self: start;
-
+        
         @media only screen and (max-width: 768px) {
+            justify-self: start;
             grid-column: 1 / 2;
             grid-row: 3 / 4;   
             flex-direction: column;
@@ -73,9 +73,9 @@ footer {
         display: flex;
         justify-content: center;
         gap: var(--small-gap);
-        justify-self: end;
-
+        
         @media only screen and (max-width: 768px) {
+            justify-self: end;
             grid-column: 2 / 3;
             grid-row: 3 / 4;
             flex-direction: column;

@@ -12,7 +12,6 @@ export default function Contact() {
     return (
         <main className="contactPage">
         <InitialTransition />
-
             <section className="contactSection">
                 <div className="contactFormContainer">
                     <h2>Contact Kalahari BioCare</h2>

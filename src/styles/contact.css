@@ -10,6 +10,7 @@
 
         @media only screen and (max-width: 768px) {
             grid-template-columns: 1fr;
+            gap: var(--medium-gap);
         }
 
         .contactFormContainer {
@@ -28,6 +29,8 @@
             & h2 {
                 color: white;
             }
+
+
         }
 
         .otherContactOptionsContainer {
@@ -35,11 +38,13 @@
             gap: var(--big-gap);
             flex-direction: column;
             align-items: start;
-            display: none;
-
+            
             @media only screen and (max-width: 768px) { 
                 grid-column: 1 / 2;
                 grid-row: 2 / 3;
+                padding: var(--big-gap) var(--side-padding-for-sections);
+                gap: var(--medium-gap);
+
             }
             
             .contactsContainer {
@@ -50,6 +55,11 @@
                     margin-right: var(--small-gap);
                 }
             }
+
+            & h5 {
+                padding-top: var(--medium-gap);
+            }
+
             .socialLinksContainer {
                 grid-column: 1 / 3;
                 grid-row: 3 / 4;
