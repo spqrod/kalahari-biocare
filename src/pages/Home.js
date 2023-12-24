@@ -32,7 +32,7 @@ export default function Home() {
                 <h1>Kalahari Biocare</h1>
                 <div className="square">
                     <p className="text">
-                        We produce the best organic African oils found on the world market
+                        Organic pure oils from Africa that are sourced and produced with conscience, care and concern for the future of our natural resources, ecosystem and community.
                     </p>
                 </div>
                 <Link to="/products">
@@ -45,13 +45,16 @@ export default function Home() {
             <section className="welcomeSection">
                 <h2>Welcome to Kalahari Natural Oils!</h2>
                 <div className="contentContainer">
-                    <p className="text1">
+                    {/* <p className="text1">
                         For more than 2 decades we have been producing 100% organic and pure natural African oils. We make sure that your ingredients are freshly made and of best quality. Our oils are extracted to order and with integrity. 
+                    </p> */}
+                    <p className="text1">
+                        Kalahari Natural Oils Ltd was founded in 2006. We work with communities in remote rural parts of Zambia. We follow Organic Production and Processing Rules and UN BioTrade Pinciples & Criteria for use of Terrestrial Biodiversity.
                     </p>
                     <img className="womenWithBasketsImage image" src={womenWithBaskets} alt="" />
                     <img className="womanHoldingNutsImage image" src={womanHoldingNuts} alt="" />
                     <p className="text2">
-                        Kalahari Natural Oils Ltd was founded in 2006. We work with communities in remote rural parts of Zambia. The Wild collection from the forests is mainly done by women. We follow Organic Production and Processing Rules and UN BioTrade Pinciples & Criteria for use of Terrestrial Biodiversity.
+                        The wild collection from the forests is done by hand to get the best quality of fruit and seed for our products and to create jobs where jobs are difficult to find.
                     </p>
                     <img className="basketWithSeedsImage image" src={basketWithSeeds} alt="" />
                 </div>
@@ -64,9 +67,7 @@ export default function Home() {
                 <div className="textContainer">
                     <h2>Why Use Our Oils?</h2>
                     <p>
-                        We offer best on the market, 100% natural and pure oils. <br/><br/>
-                        Kalahari oils will improve your formulations, give it that extra bit of function that you desire in your skin and hair care products. <br/><br/>
-                        Our oils are cold Buttoned to order so that you will get as fresh oil as possible. Our customer service is quick and friendly.
+                        Our oils are extracted from certified organic kernels, nuts and seeds. Our process involves eco-friendly, ethical wild collection that benefits the people and forests in the remote areas where we operate.<br/><br/>Our golden oils are extracted by a cold press process and is used in the manufacturing of high-quality health and beauty products worldwide.
                     </p>
                 </div>
                 <img className="oils image" src={oils} alt="" />
@@ -94,9 +95,10 @@ export default function Home() {
 
                 <img className="image villagersWithMonicaImage1" src={villagersWithMonica} alt="villagers with monica" />
                 <div className="contentContainer">
-                    <h2>Sustainable Future</h2>
+                    <h2>Harvesting Partners</h2>
                     <p>
-                        Everybody has the right to be treated with respect and dignity. Poverty reduction is the key to give people hope, pride and a better future.
+                        Over the years, Kalahari has established relationships with the remote rural communities from whom we source raw materials for our products. The wild collection and primary processing are mainly done by women. <br/><br/>
+                        The payments received by our producers provide crucial cash support to their household income and indirectly supports the local community shops and service suppliers where business largely depends on advancing credit or involves barter.
                     </p>
                     <img className="image villagersWithMonicaImage2" src={villagersWithMonica2} alt="villagers with monica" />
                 </div>
@@ -106,12 +108,12 @@ export default function Home() {
                 <div className="textContentContainer">
                     <h2>Valuing Forests</h2>
                     <p>
-                        The Buttonure on the forests is growing through unsustainable timber logging, charcoal burning, illegal poaching and shifting cultivation practices.
+                        The pressure on the forests is growing due to unsustainable forest management and high unemployment.
                     </p>
                 </div>
                 <div className="textContentContainer2">
                     <p>
-                        We give value to trees through active and continuous demand for produce. Our supplier groups process high quality raw materials for our oils maintaining sustainable harvesting practices.
+                        By giving value to fruits and seeds people protect the and value the trees and plants. Our harvesting partners carefully wild collect and process high quality raw materials for our oils maintaining sustainable harvesting practices.
                     </p>
                 </div>
                 <img className="image berries1" src={berries1} alt="african berries" />
@@ -123,7 +125,7 @@ export default function Home() {
                 <div className="textContainer">
                     <h2>Ethical BioTrade</h2>
                     <p>
-                        Zambia is a signatory of the Nagoya protocol. At Kalahari BioCare we follow the UN BioTrade Principles & Criteria for use of Terrestrial Biodiversity to ensure the fair and equitable sharing of the benefits generated from the utilisation of forest resources.
+                        At Kalahari BioCare we follow the UN BioTrade Principles & Criteria for use of Terrestrial Biodiversity to ensure the fair and equitable sharing of the benefits generated from the utilisation of forest resources. 
                     </p>
                 </div>
             </section>
