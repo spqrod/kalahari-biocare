@@ -14,6 +14,7 @@ import ProductCategoriesPage from "./pages/ProductCategoriesPage";
 import ConsumerProducts from "./pages/ConsumerProducts.js";
 import CosmeticIngredients from "./pages/CosmeticIngredients.js";
 import MongongoOil50Ml from "./pages/MongongoOil50Ml.js";
+import NotFound from "./pages/NotFound.js";
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route path = "/about" element = { <About /> } />
         <Route path = "/privacy" element = { <Privacy /> } />
         <Route path = "/terms" element = { <Terms /> } />
+        <Route path = "*" element = { <NotFound /> } />
       </Routes>
     );
   };

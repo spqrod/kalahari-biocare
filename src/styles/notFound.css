@@ -1,0 +1,10 @@
+.notFoundPage {
+    .notFoundSection {
+        min-height: 90vh;
+        text-align: center;
+
+        & a {
+            text-decoration: underline;
+        }
+    }
+}
