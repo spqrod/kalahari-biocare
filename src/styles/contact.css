@@ -50,9 +50,22 @@
             .contactsContainer {
                 grid-column: 2 / 3;
                 grid-row: 1 / 2;
-    
-                .icon {
-                    margin-right: var(--small-gap);
+
+                .contactContainer {
+                    display: flex;
+                    align-items: center;
+                    gap: var(--small-gap);
+                    
+                    & a {
+                        display: flex;
+                        align-items: center;
+                        gap: var(--small-gap);
+                    }
+        
+                    .icon {
+                        width: 24px;
+                        max-height: 24px;
+                    }
                 }
             }
 

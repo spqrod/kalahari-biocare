@@ -2,7 +2,6 @@ import ContactForm from "../components/ContactFrom";
 import "../styles/contact.css";
 import { Link } from "react-router-dom";
 import whatsappIcon from "../resources/whatsapp-icon.svg";
-import instagramIcon from "../resources/instagram-icon.svg";
 import facebookIcon from "../resources/facebook-icon.svg";
 import locationIcon from "../resources/location-icon.svg";
 import callIcon from "../resources/call-icon.svg";
@@ -15,36 +14,35 @@ export default function Contact() {
             <section className="contactSection">
                 <div className="contactFormContainer">
                     <h2>Contact Kalahari BioCare</h2>
-                    <ContactForm isDarkVariant={false} />
+                    <ContactForm />
                 </div>
 
                 <div className="otherContactOptionsContainer">
                     <div className="contactsContainer">
-                        <div className="phoneContainer">
-                            <img className="icon" src={callIcon} alt="" />
-                            <a className="text" href=""><h6>
-                                +260 977521516
-                            </h6></a>
+                        <div className="phoneContainer contactContainer">
+                            <a className="text" href="tel:+260977521516" target="_blank" rel="noreferrer">
+                                <img className="icon" src={callIcon} alt="phone icon" />
+                                <h6>
+                                    +260 977521516
+                                </h6>
+                            </a>
                         </div>
-                        <div className="addressContainer">
-                            <img className="icon" src={locationIcon} alt="" />
-                            <a className="text" href=""><h6>
+                        <div className="addressContainer contactContainer">
+                            <img className="icon" src={locationIcon} alt="address icon" />
+                            <h6>
                                 PO Box 51386, Ridgeway, Lusaka, Zambia
-                            </h6></a>
+                            </h6>
                         </div>
                     </div>
                     <h5>
                         Social Links:
                     </h5>
                     <div className="socialLinksContainer">
-                        <Link to="https://wa.me/46761191516">
-                            <img src={whatsappIcon} alt="" />
+                        <Link to="https://wa.me/46761191516" target="_blank" rel="noreferrer">
+                            <img src={whatsappIcon} alt="whatsapp icon" />
                         </Link>
-                        <Link to="https://www.facebook.com/profile.php?id=100064365781430">
-                            <img src={facebookIcon} alt="" />
-                        </Link>
-                        <Link to="https://wa.me/46761191516">
-                            <img src={instagramIcon} alt="" />
+                        <Link to="https://www.facebook.com/p/Kalahari_biocare-100064365781430/" target="_blank" rel="noreferrer">
+                            <img src={facebookIcon} alt="whatsapp icon" />
                         </Link>
                     </div>
                 </div>

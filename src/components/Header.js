@@ -45,7 +45,7 @@ export default function Header() {
 
             <div className="logoContainer">
                 <Link className="link" to="/">
-                    <img src={logo}  className="logo" alt="" />
+                    <img src={logo}  className="logo" alt="logo" />
                 </Link>
             </div>
 
@@ -66,8 +66,8 @@ export default function Header() {
 
             <div className="backdropForMobile"></div>
 
-            <Link className="whatsAppButtonContainer" to="https://wa.me/46761191516">
-                <img className="whatsAppImg" src={whatsapp} alt="" />
+            <Link className="whatsAppButtonContainer" to="https://wa.me/46761191516" target="_blank" rel="noreferrer">
+                <img className="whatsAppImg" src={whatsapp} alt="whatsapp icon" />
             </Link>
 
             <div className="burgerMenu" onClick={display.handleBurgerMenuClick}>

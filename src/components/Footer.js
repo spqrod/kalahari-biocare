@@ -2,7 +2,6 @@ import "../styles/footer.css";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../resources/logo.svg";
 import whatsappIcon from "../resources/whatsapp-icon.svg";
-import instagramIcon from "../resources/instagram-icon.svg";
 import facebookIcon from "../resources/facebook-icon.svg";
 import locationIcon from "../resources/location-icon.svg";
 import callIcon from "../resources/call-icon.svg";
@@ -13,21 +12,21 @@ export default function Footer() {
         <footer>
 
             <Link className="logoContainer" to="/">
-                <img src={logo}  className="logo" alt="" />
+                <img src={logo}  className="logo" alt="logo" />
             </Link>
 
             <div className="contactsContainer">
                 <div className="contactContainer">
-                    <img className="icon" src={callIcon} alt="" />
-                    <a className="text" href=""><h6>
-                        +260 977521516
-                    </h6></a>
+                    <a className="text" href="tel:+260977521516" target="_blank" rel="noreferrer">
+                        <img className="icon" src={callIcon} alt="phone icon" />
+                        <h6>+260 977521516</h6>
+                    </a>
                 </div>
                 <div className="contactContainer">
-                    <img className="icon" src={locationIcon} alt="" />
-                    <a className="text" href=""><h6>
+                    <img className="icon" src={locationIcon} alt="address icon" />
+                    <h6>
                         PO Box 51386, Ridgeway, Lusaka, Zambia
-                    </h6></a>
+                    </h6>
                 </div>
             </div>
 
@@ -53,14 +52,11 @@ export default function Footer() {
             </nav>
 
             <div className="socialLinksContainer">
-                <Link to="https://wa.me/46761191516">
-                    <img src={whatsappIcon} alt="" />
+                <Link to="https://wa.me/46761191516" target="_blank" rel="noreferrer">
+                    <img src={whatsappIcon} alt="whatsapp icon" />
                 </Link>
-                <Link to="https://wa.me/46761191516">
-                    <img src={facebookIcon} alt="" />
-                </Link>
-                <Link to="https://wa.me/46761191516">
-                    <img src={instagramIcon} alt="" />
+                <Link to="https://www.facebook.com/p/Kalahari_biocare-100064365781430/" target="_blank" rel="noreferrer">
+                    <img src={facebookIcon} alt="facebook icon" />
                 </Link>
             </div>
 

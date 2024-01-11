@@ -44,9 +44,17 @@ footer {
         .contactContainer {
             display: flex;
             align-items: center;
+            gap: var(--small-gap);
+            
+            & a {
+                display: flex;
+                align-items: center;
+                gap: var(--small-gap);
+            }
 
             .icon {
-                margin-right: var(--small-gap);
+                width: 24px;
+                max-height: 24px;
             }
         }
     }
