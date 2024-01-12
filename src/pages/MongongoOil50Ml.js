@@ -57,31 +57,31 @@ export default function MongongoOil50Ml() {
                 <h1 className="name">Mongongo Oil</h1>
                 <div className="photoContainer">
                     <div className="mainImageAndArrowsContainer">
-                        <img className="image main" src="" alt="" />
-                        <img className="leftArrow" onClick={imageSlider.handleLeftArrowClick} src={leftArrow} alt="" />
-                        <img className="rightArrow" onClick={imageSlider.handleRightArrowClick} src={rightArrow} alt="" />
+                        <img className="image main" src="" alt="oil" />
+                        <img className="leftArrow" onClick={imageSlider.handleLeftArrowClick} src={leftArrow} alt="left arrow" />
+                        <img className="rightArrow" onClick={imageSlider.handleRightArrowClick} src={rightArrow} alt="right arrow" />
                     </div>
                     <div className="thumbnailsContainer">
-                        <img className="image" onClick={imageSlider.handleImageClick}  imageid="0" src={productImage0} alt="" />
-                        <img className="image" onClick={imageSlider.handleImageClick} imageid="1" src={productImage1} alt="" />
-                        <img className="image" onClick={imageSlider.handleImageClick} imageid="2" src={productImage2} alt="" />
-                        <img className="image" onClick={imageSlider.handleImageClick} imageid="3" src={productImage3} alt="" />
+                        <img className="image" onClick={imageSlider.handleImageClick}  imageid="0" src={productImage0} alt="oil" />
+                        <img className="image" onClick={imageSlider.handleImageClick} imageid="1" src={productImage1} alt="oil" />
+                        <img className="image" onClick={imageSlider.handleImageClick} imageid="2" src={productImage2} alt="oil" />
+                        <img className="image" onClick={imageSlider.handleImageClick} imageid="3" src={productImage3} alt="oil" />
                     </div>
                 </div>
                 <div className="textContainer">
                     <h5>Properties</h5>
                     <ul className="propertiesList">
                         <li>
-                            <img className="propertyIcon" src={dropIcon} alt="" />
+                            <img className="propertyIcon" src={dropIcon} alt="hydrating icon" />
                             hydrating
                         </li>
                         <li>
-                            <img className="propertyIcon" src={regenerationIcon} alt="" />
+                            <img className="propertyIcon" src={regenerationIcon} alt="regenerating icon" />
                             regenerating
 
                         </li>
                         <li>
-                            <img className="propertyIcon" src={restructuringIcon} alt="" />
+                            <img className="propertyIcon" src={restructuringIcon} alt="restructuring icon" />
                             restructuring
                         </li>
                     </ul>
@@ -109,7 +109,7 @@ export default function MongongoOil50Ml() {
                             The frits are collected from the wild mainly by women. The oil is carefully cold Buttoned to order. This oil is certified Organic by Ecocert SA and traded according to UN BioTrade Principles and Criteria for use of Terrestrial Biodiversity.
                         </p>
                     </div>
-                    <img className="image" src={workerWithMongongoOilBarrels} alt="" />
+                    <img className="image" src={workerWithMongongoOilBarrels} alt="worker with mongongo oil barrels" />
                 </div>
                 <div className="additionalInfoContainer">
                     <div className="textContainer">
@@ -118,7 +118,7 @@ export default function MongongoOil50Ml() {
                             The Mongongo tree is a large, straight-trunked, deciduous tree that grows to a height of 15m or taller. On average, each tree gives 30 kg of fruit. Each fruit contains normally one and sometimes two kernels. The species is found mainly in deep, well-drained Kalahari Sands along the Zambezi River Valley in Southern Africa.
                         </p>
                     </div>
-                    <img className="image" src={mongongoTree} alt="" />
+                    <img className="image" src={mongongoTree} alt="mongongo tree" />
                 </div>
                 <div className="additionalInfoContainer">
                     <div className="textContainer">
@@ -127,7 +127,7 @@ export default function MongongoOil50Ml() {
                             The Tonga, the Lozi and the Luvale tribes of Zambia have used the Mongongo tree and its fruit for generations. The trunk of the tree to make dugout canoes and drums, and the timber is used for carvings. The entire fruit is used. The nutritious kernel is pounded and used in food. The oil is extracted and used in cooking and as a moisturiser that protects the skin and hair from the harsh conditions of the Kalahari. The San people of the Kalahari have used the Mongongo fruit for centuries as part of their staple food.
                         </p>
                     </div>
-                    <img className="image" src={handWithNuts} alt="" />
+                    <img className="image" src={handWithNuts} alt="hand with nuts" />
                 </div>
             </section>
         </main>

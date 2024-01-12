@@ -14,7 +14,7 @@ export default function ConsumerProducts() {
                 <h1>Consumer Products</h1>
                 <div className="productsContainer">
                     <Link className="productContainer" to="/products/consumer-products/mongongo-oil-50ml">
-                        <img className="image" src={kalahariOilIn50Ml} alt="" />
+                        <img className="image" src={kalahariOilIn50Ml} alt="kalahari oil in 50 ml" />
                         <h5>Kalahari Oil</h5>
                         <p className="description">50 ml bottle</p>
                     </Link>

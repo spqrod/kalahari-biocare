@@ -51,18 +51,18 @@ export default function Home() {
                     <p className="text1">
                         Kalahari Natural Oils Ltd was founded in 2006. We work with communities in remote rural parts of Zambia. We follow Organic Production and Processing Rules and UN BioTrade Pinciples & Criteria for use of Terrestrial Biodiversity.
                     </p>
-                    <img className="womenWithBasketsImage image" src={womenWithBaskets} alt="" />
-                    <img className="womanHoldingNutsImage image" src={womanHoldingNuts} alt="" />
+                    <img className="womenWithBasketsImage image" src={womenWithBaskets} alt="women with baskets" />
+                    <img className="womanHoldingNutsImage image" src={womanHoldingNuts} alt="woman holding nuts" />
                     <p className="text2">
                         The wild collection from the forests is done by hand to get the best quality of fruit and seed for our products and to create jobs where jobs are difficult to find.
                     </p>
-                    <img className="basketWithSeedsImage image" src={basketWithSeeds} alt="" />
+                    <img className="basketWithSeedsImage image" src={basketWithSeeds} alt="basket with seeds" />
                 </div>
             </section>
 
             <section className="whyUseSection">
                 <div className="smilingWomanImageContainer">
-                    <img className="smilingWoman image" src={smilingWoman} alt="" />
+                    <img className="smilingWoman image" src={smilingWoman} alt="smiling woman" />
                 </div>
                 <div className="textContainer">
                     <h2>Why Use Our Oils?</h2>
@@ -70,7 +70,7 @@ export default function Home() {
                         Our oils are extracted from certified organic kernels, nuts and seeds. Our process involves eco-friendly, ethical wild collection that benefits the people and forests in the remote areas where we operate.<br/><br/>Our golden oils are extracted by a cold press process and is used in the manufacturing of high-quality health and beauty products worldwide.
                     </p>
                 </div>
-                <img className="oils image" src={oils} alt="" />
+                <img className="oils image" src={oils} alt="oils" />
             </section>
 
             <section className="productsSection">
@@ -86,7 +86,7 @@ export default function Home() {
                 </div>
 
                 <div className="imageContainer">
-                    <img className="image" src={tree} alt="" />
+                    <img className="image" src={tree} alt="tree" />
                 </div>
 
             </section>
@@ -138,24 +138,24 @@ export default function Home() {
                         The work is mainly done by women. This gives these women additional cash income, more opportunities and independence.
                     </p>
                 </div>
-                <img className="image woman1" src={woman1} alt="" />
-                <img className="image woman2" src={woman2} alt="" />
+                <img className="image woman1" src={woman1} alt="woman" />
+                <img className="image woman2" src={woman2} alt="woman" />
             </section>
 
             <section className="certificatesSection">
                 <h2>Certificates and Memberships</h2>
                 <div className="certificatesContainer">
                     <div className="certificateContainer">
-                        <img className="image certificate" src={logoUsda} alt="" />
+                        <img className="image certificate" src={logoUsda} alt="USDA logo" />
                     </div>
                     <div className="certificateContainer">
-                        <img className="image certificate" src={logoSaeopa} alt="" />
+                        <img className="image certificate" src={logoSaeopa} alt="SAEOPA logo" />
                     </div>
                     <div className="certificateContainer">
-                        <img className="image certificate" src={logoEcocert} alt="" />
+                        <img className="image certificate" src={logoEcocert} alt="ECOCERT logo" />
                     </div>
                     <div className="certificateContainer">
-                        <img className="image certificate" src={logoEu} alt="" />
+                        <img className="image certificate" src={logoEu} alt="EU logo" />
                     </div>
                 </div>
             </section>
