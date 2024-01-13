@@ -36,7 +36,6 @@ export default function Header() {
     let location = useLocation();
 
     useEffect(() => {
-        console.log("test");
         display.hideMobileMenuOnLoad();
     }, [location]);
 
