@@ -1,5 +1,6 @@
 import "../styles/contactForm.css";
 import { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function ContactForm() {
 
@@ -21,20 +22,23 @@ export default function ContactForm() {
                     if (res.success) return true
                 });
         }
-    }
+    };
+
+    const captchaRef = useRef(null);
 
     const controller = {
         handleSubmit: async function(e) {
             e.preventDefault();
-            // const captchaToken = captchaRef.current.getValue();
-            // captchaRef.current.reset();
+            const captchaToken = captchaRef.current.getValue();
+            captchaRef.current.reset();
             const { name, email, phone, formMessage } = e.target.elements;
             
             const formData = {
                 name: name.value,
                 email: email.value,
                 phone: phone.value,
-                formMessage: formMessage.value
+                formMessage: formMessage.value,
+                captchaToken
             }
             
             display.switchFormForStatusText();
@@ -87,6 +91,9 @@ export default function ContactForm() {
             </div>
             <button className="button">Contact Us</button>
             <p className="statusText hidden">{statusText}</p>
+            <ReCAPTCHA 
+                sitekey = { process.env.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY }
+                ref = { captchaRef } />
         </form>
     );
 }
