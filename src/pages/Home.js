@@ -32,7 +32,8 @@ export default function Home() {
                 <h1>Kalahari Biocare</h1>
                 <div className="square">
                     <p className="text">
-                        Organic pure oils from Africa that are sourced and produced with conscience, care and concern for the future of our natural resources, ecosystem and community.
+                        Green beauty Ingredients for Sustainable beauty products.<br/>
+                        We create organic pure oils from Africa that are sourced and produced with conscience, care and concern for the future of our natural resources, ecosystem and community.
                     </p>
                 </div>
                 <Link to="/products">
@@ -67,7 +68,8 @@ export default function Home() {
                 <div className="textContainer">
                     <h2>Why Use Our Oils?</h2>
                     <p>
-                        Our oils are extracted from certified organic kernels, nuts and seeds. Our process involves eco-friendly, ethical wild collection that benefits the people and forests in the remote areas where we operate.<br/><br/>Our golden oils are extracted by a cold press process and is used in the manufacturing of high-quality health and beauty products worldwide.
+                        Our oils are extracted from certified organic kernels, nuts and seeds. Our process involves eco-friendly, ethical wild collection that benefits the people and forests in the remote areas where we operate.<br/><br/>
+                        Our oils are cold pressed and we extract the oils to order. They are used in the manufacturing of high-quality health and beauty products worldwide.
                     </p>
                 </div>
                 <img className="oils image" src={oils} alt="oils" />
@@ -106,14 +108,14 @@ export default function Home() {
 
             <section className="feature2Section">
                 <div className="textContentContainer">
-                    <h2>Valuing Forests</h2>
+                    <h2>Conserving Forests</h2>
                     <p>
                         The pressure on the forests is growing due to unsustainable forest management and high unemployment.
                     </p>
                 </div>
                 <div className="textContentContainer2">
                     <p>
-                        By giving value to fruits and seeds people protect the and value the trees and plants. Our harvesting partners carefully wild collect and process high quality raw materials for our oils maintaining sustainable harvesting practices.
+                        By giving value to fruits and seeds people protect and conserve the trees and plants. Our harvesting partners carefully wild collect and process high quality raw materials for our oils maintaining sustainable harvesting practices.
                     </p>
                 </div>
                 <img className="image berries1" src={berries1} alt="african berries" />

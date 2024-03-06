@@ -54,7 +54,7 @@ export default function MongongoOil50Ml() {
             <InitialTransition />
             <section className="mainInfoSection">
                 <Breadcrumbs />
-                <h1 className="name">Mongongo Oil</h1>
+                <h1 className="name">Mongongo / Mankettis Kernel Oil</h1>
                 <div className="photoContainer">
                     <div className="mainImageAndArrowsContainer">
                         <img className="image main" src="" alt="oil" />
@@ -87,14 +87,17 @@ export default function MongongoOil50Ml() {
                     </ul>
                     <h5>Profile</h5>
                     <p>
-                        Mongongo oil has a high linoleic acid content (between 30% and 54%), which is synthesised by the body to form part of the composition of cell membranes. The α-eleostearic acid (C18 3 9c, 11t, 13t) content in Mongongo oil provides protection from harmful UV rays.
+                        Mongongo oil has a high linoleic acid content (between 30% and 54%), which helps to restore the skin barrier and prevent transepidermal water loss (TEWL). The α-eleostearic acid (C18 3 9c, 11t, 13t) content in Mongongo oil provides a protective layer on skin and hair that may reduce the effects of harmful UV-rays and pollutants in our environment.
                     </p>
                     <h5>Uses</h5>
                     <p>
                         Mongongo oil is used in hair and body products, such as baby care, eye creams, emollient creams for normal and dry skins, shampoos for dry, damaged and fragile hair. It can also be used in lipsticks and anti–pollution care.
                     </p>
                     <p>
-                        Package: <b>50 ml.</b>
+                        Package: <b>50 ml</b>
+                    </p>
+                    <p>
+                        Origin: <b>Zambia</b>
                     </p>
                     <Link to="/contact">
                         <button className="button yellow">Contact For Pricing</button>
@@ -106,7 +109,7 @@ export default function MongongoOil50Ml() {
                     <div className="textContainer">
                         <h3>How We Make It</h3>
                         <p>
-                            The frits are collected from the wild mainly by women. The oil is carefully cold Buttoned to order. This oil is certified Organic by Ecocert SA and traded according to UN BioTrade Principles and Criteria for use of Terrestrial Biodiversity.
+                            The frits are collected from the wild mainly by women. The oil is carefully cold pressed to order to make sure that you get as fresh oil as possible. This oil is certified Organic by Ecocert SA and traded according to UN BioTrade Principles and Criteria for use of Terrestrial Biodiversity.
                         </p>
                     </div>
                     <img className="image" src={workerWithMongongoOilBarrels} alt="worker with mongongo oil barrels" />

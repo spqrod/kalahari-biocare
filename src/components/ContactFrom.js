@@ -29,7 +29,7 @@ export default function ContactForm() {
     const controller = {
         handleSubmit: async function(e) {
             e.preventDefault();
-            const captchaToken = captchaRef.current.getValue();
+            const token = captchaRef.current.getValue();
             captchaRef.current.reset();
             const { name, email, phone, formMessage } = e.target.elements;
             
@@ -38,7 +38,7 @@ export default function ContactForm() {
                 email: email.value,
                 phone: phone.value,
                 formMessage: formMessage.value,
-                captchaToken
+                token
             }
             
             display.switchFormForStatusText();
@@ -89,11 +89,13 @@ export default function ContactForm() {
                     <input type="text" id="formMessage" />
                 </div>
             </div>
+            <div className="captchaContainer">
+                <ReCAPTCHA 
+                    sitekey = { process.env.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY }
+                    ref = { captchaRef } />
+            </div>
             <button className="button">Contact Us</button>
             <p className="statusText hidden">{statusText}</p>
-            <ReCAPTCHA 
-                sitekey = { process.env.REACT_APP_GOOGLE_RECAPTCHA_SITE_KEY }
-                ref = { captchaRef } />
         </form>
     );
 }

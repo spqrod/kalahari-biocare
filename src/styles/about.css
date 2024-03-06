@@ -60,16 +60,6 @@
             max-width: 700px;
         }
 
-        & p:last-of-type {
-            align-self: end;
-            text-align: right;
-
-            @media only screen and (max-width: 768px) {
-                text-align: left;
-            }
-    
-        }
-
         .image {
             width: 100%;
         }

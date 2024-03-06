@@ -65,7 +65,7 @@ export default function Header() {
 
             <div className="backdropForMobile"></div>
 
-            <Link className="whatsAppButtonContainer" to="https://wa.me/46761191516" target="_blank" rel="noreferrer">
+            <Link className="whatsAppButtonContainer" to="https://wa.me/260977521516" target="_blank" rel="noreferrer">
                 <img className="whatsAppImg" src={whatsapp} alt="whatsapp icon" />
             </Link>
 

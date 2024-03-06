@@ -18,7 +18,7 @@ export default function About() {
                 <div className="textContainer">
                     <h1>About Us</h1>
                     <p>
-                        Kalahari Natural Oils Limited is a Limited Liability company registered in the Republic of Zambia in 2006. <br /><br />We work with communities in remote rural parts of Zambia. We source wild kernel and seed from the forests where collection and processing is done using traditional methods by hand to obtain the best raw materials for our products and create jobs where jobs are difficult to find.
+                        Kalahari Natural Oils Limited is a Limited Liability company registered in the Republic of Zambia in 2006. <br /><br />We work with communities in remote rural parts of Zambia. We source wild kernel and seed from the forests where collection and processing is done by hand to obtain the best raw materials for our products and create jobs where jobs are difficult to find.
                     </p>
                 </div>
                 <img className="image" src={monicaWithVillagers2} alt="monica with the villagers" />
@@ -105,10 +105,6 @@ export default function About() {
             <section className="additionalSection">
                 <p>
                     Kalahari has trained and appointed Internal Inspectors from each association who are tasked with carrying out refresher training in Organic Production Rules and who check on organic and production compliance in neighbouring villages associations.
-                </p>
-                <img className="image" src={monicaAtTraining} alt="monica at local training event" />
-                <p>
-                    Kalahari works with seven communities whose 233 registered members live in their villages that are found along the upper Zambezi River.
                 </p>
                 <img className="image" src={monicaWithVillagers} alt="monica with the villagers" />
             </section>

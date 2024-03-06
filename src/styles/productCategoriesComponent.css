@@ -23,13 +23,8 @@
 
         .name {
             padding-top: var(--medium-gap);
-            background-color: white;
-        }
-
-        .description {
-            text-align: center;
-            background-color: white;
             padding-bottom: var(--medium-gap);
+            background-color: white;
         }
 
         .button {

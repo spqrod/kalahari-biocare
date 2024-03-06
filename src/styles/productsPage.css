@@ -13,11 +13,12 @@
             border: 1px solid white;
             padding: var(--big-gap);
             text-decoration: none;
+            width: min-content;
     
             .image {
-                max-width: 200px;
+                max-width: 280px;
             }
-    
+            
             .description {
                 text-align: center;
             }

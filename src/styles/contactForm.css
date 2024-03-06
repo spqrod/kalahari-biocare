@@ -8,7 +8,7 @@
         flex-direction: column;
         gap: var(--big-gap);
         transition: var(--transition);
-        padding: var(--very-big-gap);
+        padding: var(--big-gap) var(--very-big-gap);
         
         @media only screen and (max-width: 768px) {
             padding: var(--big-gap);
@@ -37,6 +37,11 @@
             visibility: hidden;
             opacity: 0;
         }
+    }
+
+    .captchaContainer {
+        display: flex;
+        justify-content: center;
     }
 
     .button {
