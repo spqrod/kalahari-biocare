@@ -5,7 +5,7 @@ import trevorRobson from "../resources/team/trevor-robson.jpeg";
 import boyd from "../resources/team/boyd.jpeg";
 import nicholas from "../resources/team/nicholas.jpeg";
 import greyson from "../resources/team/greyson.jpeg";
-import monicaAtTraining from "../resources/monica-at-training.jpg";
+// import monicaAtTraining from "../resources/monica-at-training.jpg";
 import monicaWithVillagers from "../resources/monica-with-villagers.jpg";
 import monicaWithVillagers2 from "../resources/monica-with-villagers-2.jpg";
 import { InitialTransition } from "../components/InitialTransition";
@@ -40,30 +40,6 @@ export default function About() {
                         </p>
                     </div>
                     <div className="teamMemberContainer">
-                        <img className="image" src={trevorWatson} alt="trevor watson" />
-                        <h5>
-                            Trevor Watson
-                        </h5>
-                        <h6>
-                            Director
-                        </h6>
-                        <p>
-                            Trevor is an entrepreneur and honey producer who has spent many years working with rural beekeepers and organic small farmers; he is a shareholder and brings his vast experience to the board.
-                        </p>
-                    </div>
-                    <div className="teamMemberContainer">
-                        <img className="image" src={trevorRobson} alt="trevor robson" />
-                        <h5>
-                            Trevor Robson
-                        </h5>
-                        <h6>
-                            Director
-                        </h6>
-                        <p>
-                            Trevor has a lifelong interest in ecology and wilderness and is a former Chartered Secretary who takes care of finance and corporate affairs.
-                        </p>
-                    </div>
-                    <div className="teamMemberContainer">
                         <img className="image" src={greyson} alt="greyson" />
                         <h5>
                             Greyson Mwiinga
@@ -88,6 +64,18 @@ export default function About() {
                         </p>
                     </div>
                     <div className="teamMemberContainer">
+                        <img className="image" src={trevorWatson} alt="trevor watson" />
+                        <h5>
+                            Trevor Watson
+                        </h5>
+                        <h6>
+                            Expert
+                        </h6>
+                        <p>
+                            Trevor is an entrepreneur and honey producer who has spent many years working with rural beekeepers and organic small farmers; he is a shareholder and brings his vast experience to the board.
+                        </p>
+                    </div>
+                    <div className="teamMemberContainer">
                         <img className="image" src={nicholas} alt="nicholas" />
                         <h5>
                             Nicholas Tamba
@@ -97,6 +85,18 @@ export default function About() {
                         </h6>
                         <p>
                             Nicholas is responsible for Kalahari’s statutory compliance and monthly and annual financial reporting.
+                        </p>
+                    </div>
+                    <div className="teamMemberContainer">
+                        <img className="image" src={trevorRobson} alt="trevor robson" />
+                        <h5>
+                            Trevor Robson
+                        </h5>
+                        <h6>
+                            Director
+                        </h6>
+                        <p>
+                            Trevor has a lifelong interest in ecology and wilderness and is a former Chartered Secretary who takes care of finance and corporate affairs.
                         </p>
                     </div>
                 </div>

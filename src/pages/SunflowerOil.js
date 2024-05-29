@@ -16,7 +16,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { InitialTransition } from "../components/InitialTransition";
 
-export default function MongongoOil50Ml() {
+export default function KalahariMelonseedOil() {
 
     useEffect(() => {  
         imageSlider.loadInitialImage();
@@ -54,7 +54,7 @@ export default function MongongoOil50Ml() {
             <InitialTransition />
             <section className="mainInfoSection">
                 <Breadcrumbs />
-                <h1 className="name">Mongongo / Manketti Kernel Oil</h1>
+                <h1 className="name">Kalahari Melonseed Oil</h1>
                 <div className="photoContainer">
                     <div className="mainImageAndArrowsContainer">
                         <img className="image main" src="" alt="oil" />

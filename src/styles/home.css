@@ -11,6 +11,10 @@
         align-items: center;
         padding-top: var(--big-gap);
         padding-bottom: var(--big-gap);
+
+        .headerAndHeadlineContainer {
+            padding-bottom: var(--small-gap);
+        }
     
         & h1, p {
             color: white;

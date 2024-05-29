@@ -11,8 +11,8 @@ import tree from "../resources/tree.jpg";
 import villagersWithMonica from "../resources/villagers-with-monica.jpg";
 import villagersWithMonica2 from "../resources/villagers-with-monica-2.jpg";
 import berries1 from "../resources/berries-1.jpg";
-import berries2 from "../resources/berries-2.jpg";
-import berries3 from "../resources/berries-3.jpg";
+import berries2 from "../resources/berries-2-2.jpg";
+import berries3 from "../resources/berries-3-2.jpg";
 import woman1 from "../resources/woman-1.jpg";
 import woman2 from "../resources/woman-2.jpg";
 import logoEu from "../resources/logo-eu.svg";
@@ -29,10 +29,12 @@ export default function Home() {
             className="homePage">
             <InitialTransition />
             <section className="heroSection">
-                <h1>Kalahari Biocare</h1>
+                <div className="headerAndHeadlineContainer">
+                    <h1>Kalahari Biocare</h1>
+                    <p>Green beauty Ingredients for Sustainable beauty products.</p>
+                </div>
                 <div className="square">
                     <p className="text">
-                        Green beauty Ingredients for Sustainable beauty products.<br/>
                         We create organic pure oils from Africa that are sourced and produced with conscience, care and concern for the future of our natural resources, ecosystem and community.
                     </p>
                 </div>
@@ -49,8 +51,11 @@ export default function Home() {
                     {/* <p className="text1">
                         For more than 2 decades we have been producing 100% organic and pure natural African oils. We make sure that your ingredients are freshly made and of best quality. Our oils are extracted to order and with integrity. 
                     </p> */}
-                    <p className="text1">
+                    {/* <p className="text1">
                         Kalahari Natural Oils Ltd was founded in 2006. We work with communities in remote rural parts of Zambia. We follow Organic Production and Processing Rules and UN BioTrade Pinciples & Criteria for use of Terrestrial Biodiversity.
+                    </p> */}
+                    <p className="text1">
+                        Our oils are extracted from certified organic kernels, nuts and seeds. Our process involves eco-friendly, ethical wild collection that benefits the people and forests in the remote areas where we operate.
                     </p>
                     <img className="womenWithBasketsImage image" src={womenWithBaskets} alt="women with baskets" />
                     <img className="womanHoldingNutsImage image" src={womanHoldingNuts} alt="woman holding nuts" />
