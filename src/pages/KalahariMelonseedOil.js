@@ -1,8 +1,8 @@
 import "../styles/productPage.css";
-import productImage0 from "../resources/product-images/mongongo-oil-50ml/product-image-0.jpeg";
-import productImage1 from "../resources/product-images/mongongo-oil-50ml/product-image-1.jpeg";
-import productImage2 from "../resources/product-images/mongongo-oil-50ml/product-image-2.jpeg";
-import productImage3 from "../resources/product-images/mongongo-oil-50ml/product-image-3.jpeg";
+import productImage0 from "../resources/product-images/ximenia-oil/ximenia.jpg";
+// import productImage1 from "../resources/product-images/mongongo-oil-50ml/product-image-1.jpeg";
+// import productImage2 from "../resources/product-images/mongongo-oil-50ml/product-image-2.jpeg";
+// import productImage3 from "../resources/product-images/mongongo-oil-50ml/product-image-3.jpeg";
 import dropIcon from "../resources/drop-icon.svg";
 import regenerationIcon from "../resources/regeneration-icon.svg";
 import restructuringIcon from "../resources/restructuring-icon.svg";
@@ -35,16 +35,17 @@ export default function KalahariMelonseedOil() {
         },
         updateMainImage(imageId) {
             const image = document.querySelector(".image.main");
-            const imageArray = [productImage0, productImage1, productImage2, productImage3];
+            // const imageArray = [productImage0, productImage1, productImage2, productImage3];
+            const imageArray = [productImage0];
             image.src = imageArray[imageId];
         },
         handleRightArrowClick() {
-            if (imageSlider.currentMainImageId < 3)
-                imageSlider.updateMainImage(++imageSlider.currentMainImageId);
+            // if (imageSlider.currentMainImageId < 3)
+            //     imageSlider.updateMainImage(++imageSlider.currentMainImageId);
         },
         handleLeftArrowClick() {
-            if (imageSlider.currentMainImageId > 0)
-                imageSlider.updateMainImage(--imageSlider.currentMainImageId);
+            // if (imageSlider.currentMainImageId > 0)
+            //     imageSlider.updateMainImage(--imageSlider.currentMainImageId);
         },
 
     };
@@ -62,10 +63,10 @@ export default function KalahariMelonseedOil() {
                         <img className="rightArrow" onClick={imageSlider.handleRightArrowClick} src={rightArrow} alt="right arrow" />
                     </div>
                     <div className="thumbnailsContainer">
-                        <img className="image" onClick={imageSlider.handleImageClick}  imageid="0" src={productImage0} alt="oil" />
-                        <img className="image" onClick={imageSlider.handleImageClick} imageid="1" src={productImage1} alt="oil" />
+                        <img className="image" onClick={imageSlider.handleImageClick}  imageid="0" src={productImage0} alt="ximenia" />
+                        {/* <img className="image" onClick={imageSlider.handleImageClick} imageid="1" src={productImage1} alt="oil" />
                         <img className="image" onClick={imageSlider.handleImageClick} imageid="2" src={productImage2} alt="oil" />
-                        <img className="image" onClick={imageSlider.handleImageClick} imageid="3" src={productImage3} alt="oil" />
+                        <img className="image" onClick={imageSlider.handleImageClick} imageid="3" src={productImage3} alt="oil" /> */}
                     </div>
                 </div>
                 <div className="textContainer">
@@ -87,14 +88,25 @@ export default function KalahariMelonseedOil() {
                     </ul>
                     <h5>Profile</h5>
                     <p>
-                        Mongongo oil has a high linoleic acid content (between 30% and 54%), which helps to restore the skin barrier and prevent transepidermal water loss (TEWL). The α-eleostearic acid (C18 3 9c, 11t, 13t) content in Mongongo oil provides a protective layer on skin and hair that may reduce the effects of harmful UV-rays and pollutants in our environment.
+                        Palmitic acid (16:0) 7 – 13 %<br></br>
+                        Stearic acid (18:0) 5 – 11 %<br></br>
+                        Oleic acid (18:1) 10 – 24 %<br></br>
+                        Linoleic acid (18:2) 55– 70 %<br></br>
+                        Saturated Fatty acids c.a. 18.7 %<br></br>
+                        Monounsaturated Fatty Acids c.a. 15.4 %<br></br>
+                        Polyunsaturated Fatty Acids c.a. 65.9 %<br></br>
+                        Specific gravity 0.92-093<br></br>
+                        Refractive index 1.48<br></br>
+                        Iodine value 120-130<br></br>
+                        Unsaponifiable matter &lt;1 g /100g
                     </p>
                     <h5>Uses</h5>
                     <p>
-                        Mongongo oil is used in hair and body products, such as baby care, eye creams, emollient creams for normal and dry skins, shampoos for dry, damaged and fragile hair. It can also be used in lipsticks and anti–pollution care.
+                        Kalahari Melon seed oil is light and absorbs quickly by the skin leaving a soft silky feel to the skin. It is used in hair and body products, such as baby care, emollient creams, eye creams suitable for all skin types.
+                        Max usage in formulation up to 100%.
                     </p>
                     <p>
-                        Package: <b>50 ml</b>
+                        Package: <b>In food grade 1 kg, 4.5 kg plastic containers.</b>
                     </p>
                     <p>
                         Origin: <b>Zambia</b>
@@ -118,11 +130,14 @@ export default function KalahariMelonseedOil() {
                     <div className="textContainer">
                         <h3>Kalahari Melonseed</h3>
                         <p>
-                            The Mongongo tree is a large, straight-trunked, deciduous tree that grows to a height of 15m or taller. On average, each tree gives 30 kg of fruit. Each fruit contains normally one and sometimes two kernels. The species is found mainly in deep, well-drained Kalahari Sands along the Zambezi River Valley in Southern Africa.
+                            Species: Citrullus lanatus <br></br>
+                            Origin: Southern Africa <br></br>
+                            Annual creeping herb with hairy stems, bright yellow flower and green leaves, found in the deep, well drained Kalahari sand conditions throughout Southern Africa.
                         </p>
                     </div>
                     <img className="image" src={melon} alt="melon" />
                 </div>
+                {/* 
                 <div className="additionalInfoContainer">
                     <div className="textContainer">
                         <h3>Traditional Use</h3>
@@ -132,6 +147,8 @@ export default function KalahariMelonseedOil() {
                     </div>
                     <img className="image" src={seeds} alt="seeds" />
                 </div>
+                 */}
+
             </section>
         </main>
     );
