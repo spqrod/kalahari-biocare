@@ -1,22 +1,23 @@
 import "../styles/productPage.css";
-import productImage0 from "../resources/product-images/mongongo-oil-50ml/product-image-0.jpeg";
-import productImage1 from "../resources/product-images/mongongo-oil-50ml/product-image-1.jpeg";
-import productImage2 from "../resources/product-images/mongongo-oil-50ml/product-image-2.jpeg";
-import productImage3 from "../resources/product-images/mongongo-oil-50ml/product-image-3.jpeg";
+import productImage0 from "../resources/product-images/sunflower-oil/sunflower.jpg";
+// import productImage1 from "../resources/product-images/mongongo-oil-50ml/product-image-1.jpeg";
+// import productImage2 from "../resources/product-images/mongongo-oil-50ml/product-image-2.jpeg";
+// import productImage3 from "../resources/product-images/mongongo-oil-50ml/product-image-3.jpeg";
 import dropIcon from "../resources/drop-icon.svg";
 import regenerationIcon from "../resources/regeneration-icon.svg";
 import restructuringIcon from "../resources/restructuring-icon.svg";
 import leftArrow from "../resources/left-arrow.svg";
 import rightArrow from "../resources/right-arrow.svg";
 import workerWithMongongoOilBarrels from "../resources/product-images/mongongo-oil-50ml/worker-with-mongongo-oil-barrels.jpg";
-import mongongoTree from "../resources/product-images/mongongo-oil-50ml/mongongo-tree-2.jpg";
-import handWithNuts from "../resources/product-images/mongongo-oil-50ml/hand-with-nuts.jpg";
+// import mongongoTree from "../resources/product-images/mongongo-oil-50ml/mongongo-tree-2.jpg";
+// import handWithNuts from "../resources/product-images/mongongo-oil-50ml/hand-with-nuts.jpg";
+import sunflowerSeeds from "../resources/product-images/sunflower-oil/sunflower-seeds.jpg";
 import { useEffect } from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import { InitialTransition } from "../components/InitialTransition";
 
-export default function KalahariMelonseedOil() {
+export default function SunflowerOil() {
 
     useEffect(() => {  
         imageSlider.loadInitialImage();
@@ -35,17 +36,17 @@ export default function KalahariMelonseedOil() {
         },
         updateMainImage(imageId) {
             const image = document.querySelector(".image.main");
-            const imageArray = [productImage0, productImage1, productImage2, productImage3];
+            const imageArray = [productImage0];
             image.src = imageArray[imageId];
         },
-        handleRightArrowClick() {
-            if (imageSlider.currentMainImageId < 3)
-                imageSlider.updateMainImage(++imageSlider.currentMainImageId);
-        },
-        handleLeftArrowClick() {
-            if (imageSlider.currentMainImageId > 0)
-                imageSlider.updateMainImage(--imageSlider.currentMainImageId);
-        },
+        // handleRightArrowClick() {
+        //     if (imageSlider.currentMainImageId < 3)
+        //         imageSlider.updateMainImage(++imageSlider.currentMainImageId);
+        // },
+        // handleLeftArrowClick() {
+        //     if (imageSlider.currentMainImageId > 0)
+        //         imageSlider.updateMainImage(--imageSlider.currentMainImageId);
+        // },
 
     };
 
@@ -54,7 +55,7 @@ export default function KalahariMelonseedOil() {
             <InitialTransition />
             <section className="mainInfoSection">
                 <Breadcrumbs />
-                <h1 className="name">Kalahari Melonseed Oil</h1>
+                <h1 className="name">Sunflower Oil</h1>
                 <div className="photoContainer">
                     <div className="mainImageAndArrowsContainer">
                         <img className="image main" src="" alt="oil" />
@@ -63,9 +64,9 @@ export default function KalahariMelonseedOil() {
                     </div>
                     <div className="thumbnailsContainer">
                         <img className="image" onClick={imageSlider.handleImageClick}  imageid="0" src={productImage0} alt="oil" />
-                        <img className="image" onClick={imageSlider.handleImageClick} imageid="1" src={productImage1} alt="oil" />
+                        {/* <img className="image" onClick={imageSlider.handleImageClick} imageid="1" src={productImage1} alt="oil" />
                         <img className="image" onClick={imageSlider.handleImageClick} imageid="2" src={productImage2} alt="oil" />
-                        <img className="image" onClick={imageSlider.handleImageClick} imageid="3" src={productImage3} alt="oil" />
+                        <img className="image" onClick={imageSlider.handleImageClick} imageid="3" src={productImage3} alt="oil" /> */}
                     </div>
                 </div>
                 <div className="textContainer">
@@ -87,14 +88,26 @@ export default function KalahariMelonseedOil() {
                     </ul>
                     <h5>Profile</h5>
                     <p>
-                        Mongongo oil has a high linoleic acid content (between 30% and 54%), which helps to restore the skin barrier and prevent transepidermal water loss (TEWL). The α-eleostearic acid (C18 3 9c, 11t, 13t) content in Mongongo oil provides a protective layer on skin and hair that may reduce the effects of harmful UV-rays and pollutants in our environment.
+                        Palmitic acid (16:0) 5 – 8  <br/>
+                        Stearic acid (18:0) 2 – 5 <br/>
+                        Arachidic acid (20:0) &lt;1.0 <br/>
+                        Oleic acid (18:1) 22 – 30 <br/>
+                        Linoleic acid (18:2) 55 – 65 <br/>
+                        α-Linolenic acid (18:3) 0 – 0.2 <br/>
+                        Saturated Fatty acids c.a. 10 % <br/>
+                        Monounsaturated Fatty Acids c.a. 30 % <br/>
+                        Polyunsaturated Fatty Acids c.a. 60 % <br/>
+                        Specific gravity 0.91-09 <br/>
+                        Refractive index 1.47 <br/>
+                        Iodine value 120 – 140 <br/>
+                        Unsaponifiable matter &lt;1.5 /100g <br/>
                     </p>
                     <h5>Uses</h5>
                     <p>
-                        Mongongo oil is used in hair and body products, such as baby care, eye creams, emollient creams for normal and dry skins, shampoos for dry, damaged and fragile hair. It can also be used in lipsticks and anti–pollution care.
+                        Sunflower seed oil is interesting because of the high content of linoleic acid that gives the oil moisturising, regenerating and restructuring, properties. Sunflower seed oil is used in hair and body care products. It is suitable for normal to dry skin, baby care and eye contour products, lipsticks and in shampoo for dry, damaged and fragile hair.
                     </p>
                     <p>
-                        Package: <b>50 ml</b>
+                        Package: <b>Food grade 1 kg, 4.5 kg food grade plastic containers and 190 kg food grade steel drums</b>
                     </p>
                     <p>
                         Origin: <b>Zambia</b>
@@ -116,14 +129,14 @@ export default function KalahariMelonseedOil() {
                 </div>
                 <div className="additionalInfoContainer">
                     <div className="textContainer">
-                        <h3>Mongongo Tree</h3>
+                        <h3>Sunflower Plant</h3>
                         <p>
-                            The Mongongo tree is a large, straight-trunked, deciduous tree that grows to a height of 15m or taller. On average, each tree gives 30 kg of fruit. Each fruit contains normally one and sometimes two kernels. The species is found mainly in deep, well-drained Kalahari Sands along the Zambezi River Valley in Southern Africa.
+                            Sunflower is an annual non-woody plant belonging to the Compositae family. It can grow up to 3 m tall and has one or more sun-shaped bright yellow flowers. The oil is extracted from the seeds. Organic Sunflower oil is extracted from seed that is grown using organic farming practises, such as non-use of synthetic fertilizers, no pesticide use and propagated from non GMO seed.
                         </p>
                     </div>
-                    <img className="image" src={mongongoTree} alt="mongongo tree" />
+                    <img className="image" src={sunflowerSeeds} alt="mongongo tree" />
                 </div>
-                <div className="additionalInfoContainer">
+                {/* <div className="additionalInfoContainer">
                     <div className="textContainer">
                         <h3>Traditional Use</h3>
                         <p>
@@ -131,7 +144,7 @@ export default function KalahariMelonseedOil() {
                         </p>
                     </div>
                     <img className="image" src={handWithNuts} alt="hand with nuts" />
-                </div>
+                </div> */}
             </section>
         </main>
     );

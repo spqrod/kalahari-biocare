@@ -15,10 +15,16 @@
             border: 1px solid white;
             padding: var(--big-gap);
             text-decoration: none;
-            width: min-content;
-    
+            /* width: min-content; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: var(--medium-gap);
+            max-width: 350px;
+            
             .image {
-                max-width: 280px;
+                object-fit: cover;
+                flex-grow: 1;
             }
             
             .description {
