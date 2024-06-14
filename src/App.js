@@ -14,6 +14,7 @@ import ProductCategoriesPage from "./pages/ProductCategoriesPage";
 import ConsumerProducts from "./pages/ConsumerProducts.js";
 import CosmeticIngredients from "./pages/CosmeticIngredients.js";
 import MongongoOil50Ml from "./pages/MongongoOil50Ml.js";
+import MongongoOil from "./pages/MongongoOil.js";
 import XimeniaOil from "./pages/XimeniaOil.js";
 import KalahariMelonseedOil from "./pages/KalahariMelonseedOil.js";
 import SunflowerOil from "./pages/SunflowerOil.js";
@@ -34,6 +35,7 @@ function App() {
         <Route path = "/products/consumer-products" element = { <ConsumerProducts /> } />
         <Route path = "/products/cosmetic-ingredients" element = { <CosmeticIngredients /> } />
         <Route path = "/products/consumer-products/mongongo-oil-50ml" element = { <MongongoOil50Ml /> } />
+        <Route path = "/products/cosmetic-ingredients/mongongo-oil" element = { <MongongoOil/> } />
         <Route path = "/products/cosmetic-ingredients/sunflower-oil" element = { <SunflowerOil /> } />
         <Route path = "/products/cosmetic-ingredients/ximenia-oil" element = { <XimeniaOil /> } />
         <Route path = "/products/cosmetic-ingredients/kalahari-melonseed-oil" element = { <KalahariMelonseedOil /> } />

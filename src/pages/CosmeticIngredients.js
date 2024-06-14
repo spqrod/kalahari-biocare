@@ -20,11 +20,11 @@ export default function CosmeticIngredients() {
                 <Breadcrumbs />
                 <h1>Cosmetic Ingredients</h1>
                 <div className="productsContainer">
-                    {/* <Link className="productContainer" to="/products/cosmetic-ingredients/mongongo-oil-50ml">
-                        <img className="image" src={kalahariOilIn50Ml} alt="Mongongo / Manketti Kernel Organic Oil, 50 ml" />
+                    <Link className="productContainer" to="/products/cosmetic-ingredients/mongongo-oil">
+                        <img className="image" src={kalahariOilIn50Ml} alt="Mongongo / Manketti Kernel Organic Oil" />
                         <h5 className="name">Mongongo / Manketti Kernel Oil</h5>
-                        {/* <p className="description">50 ml</p>
-                    </Link> */}
+                        {/* <p className="description">50 ml</p> */}
+                    </Link>
                     <Link className="productContainer" to="/products/cosmetic-ingredients/kalahari-melonseed-oil">
                         <img className="image" src={melon} alt="kalahari melonseed oil" />
                         <h5 className="name">Kalahari Melonseed Oil</h5>
