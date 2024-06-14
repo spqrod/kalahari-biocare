@@ -34,9 +34,9 @@ function App() {
         <Route path = "/products/consumer-products" element = { <ConsumerProducts /> } />
         <Route path = "/products/cosmetic-ingredients" element = { <CosmeticIngredients /> } />
         <Route path = "/products/consumer-products/mongongo-oil-50ml" element = { <MongongoOil50Ml /> } />
-        <Route path = "/products/consumer-products/sunflower-oil" element = { <SunflowerOil /> } />
-        <Route path = "/products/consumer-products/ximenia-oil" element = { <XimeniaOil /> } />
-        <Route path = "/products/consumer-products/kalahari-melonseed-oil" element = { <KalahariMelonseedOil /> } />
+        <Route path = "/products/cosmetic-ingredients/sunflower-oil" element = { <SunflowerOil /> } />
+        <Route path = "/products/cosmetic-ingredients/ximenia-oil" element = { <XimeniaOil /> } />
+        <Route path = "/products/cosmetic-ingredients/kalahari-melonseed-oil" element = { <KalahariMelonseedOil /> } />
         <Route path = "/contact" element = { <Contact /> } />
         <Route path = "/about" element = { <About /> } />
         <Route path = "/privacy" element = { <Privacy /> } />

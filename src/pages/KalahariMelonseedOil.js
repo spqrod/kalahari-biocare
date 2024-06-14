@@ -1,5 +1,6 @@
 import "../styles/productPage.css";
-import productImage0 from "../resources/product-images/ximenia-oil/ximenia.jpg";
+import productImage0 from "../resources/product-images/kalahari-melonseed-oil/melon.jpg";
+
 // import productImage1 from "../resources/product-images/mongongo-oil-50ml/product-image-1.jpeg";
 // import productImage2 from "../resources/product-images/mongongo-oil-50ml/product-image-2.jpeg";
 // import productImage3 from "../resources/product-images/mongongo-oil-50ml/product-image-3.jpeg";
@@ -135,7 +136,7 @@ export default function KalahariMelonseedOil() {
                             Annual creeping herb with hairy stems, bright yellow flower and green leaves, found in the deep, well drained Kalahari sand conditions throughout Southern Africa.
                         </p>
                     </div>
-                    <img className="image" src={melon} alt="melon" />
+                    <img className="image" src={seeds} alt="melon" />
                 </div>
                 {/* 
                 <div className="additionalInfoContainer">
