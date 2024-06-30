@@ -122,7 +122,7 @@ export default function SunflowerOil() {
                     <div className="textContainer">
                         <h3>How We Make It</h3>
                         <p>
-                            The frits are collected from the wild mainly by women. The oil is carefully cold pressed to order to make sure that you get as fresh oil as possible. This oil is certified Organic by Ecocert SA and traded according to UN BioTrade Principles and Criteria for use of Terrestrial Biodiversity.
+                            The oil is carefully cold pressed to order to make sure that you get as fresh oil as possible. This oil is certified Organic by Ecocert.
                         </p>
                     </div>
                     <img className="image" src={workerWithMongongoOilBarrels} alt="worker with mongongo oil barrels" />

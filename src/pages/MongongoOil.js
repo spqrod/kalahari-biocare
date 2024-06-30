@@ -1,5 +1,5 @@
 import "../styles/productPage.css";
-import productImage0 from "../resources/product-images/mongongo-oil-50ml/product-image-0.jpeg";
+import productImage0 from "../resources/product-images/mongongo-oil/berries.jpg";
 import productImage1 from "../resources/product-images/mongongo-oil-50ml/product-image-1.jpeg";
 import productImage2 from "../resources/product-images/mongongo-oil-50ml/product-image-2.jpeg";
 import productImage3 from "../resources/product-images/mongongo-oil-50ml/product-image-3.jpeg";
@@ -109,7 +109,7 @@ export default function MongongoOil() {
                     <div className="textContainer">
                         <h3>How We Make It</h3>
                         <p>
-                            The frits are collected from the wild mainly by women. The oil is carefully cold pressed to order to make sure that you get as fresh oil as possible. This oil is certified Organic by Ecocert SA and traded according to UN BioTrade Principles and Criteria for use of Terrestrial Biodiversity.
+                            The fruits are collected from the wild mainly by women. The oil is carefully cold pressed to order to make sure that you get as fresh oil as possible. This oil is certified Organic by Ecocert and traded according to UN BioTrade Principles and Criteria for use of Terrestrial Biodiversity.
                         </p>
                     </div>
                     <img className="image" src={workerWithMongongoOilBarrels} alt="worker with mongongo oil barrels" />

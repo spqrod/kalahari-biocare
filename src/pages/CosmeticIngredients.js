@@ -2,14 +2,10 @@ import "../styles/productsPage.css"
 import { Link } from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs";
 import { InitialTransition } from "../components/InitialTransition";
-import kalahariOilIn50Ml from "../resources/kalahari-oil-in-50ml.jpg";
-import melon from "../resources/product-images/kalahari-melonseed-oil/melon.jpg";
+import mongongo from "../resources/product-images/mongongo-oil/berries.jpg";
+import melon from "../resources/product-images/kalahari-melonseed-oil/melons.jpeg";
 import ximenia from "../resources/product-images/ximenia-oil/ximenia.jpg";
 import sunflower from "../resources/product-images/sunflower-oil/sunflower.jpg";
-
-
-
-
 
 export default function CosmeticIngredients() {
 
@@ -21,7 +17,7 @@ export default function CosmeticIngredients() {
                 <h1>Cosmetic Ingredients</h1>
                 <div className="productsContainer">
                     <Link className="productContainer" to="/products/cosmetic-ingredients/mongongo-oil">
-                        <img className="image" src={kalahariOilIn50Ml} alt="Mongongo / Manketti Kernel Organic Oil" />
+                        <img className="image" src={mongongo} alt="Mongongo / Manketti Kernel Organic Oil" />
                         <h5 className="name">Mongongo / Manketti Kernel Oil</h5>
                         {/* <p className="description">50 ml</p> */}
                     </Link>
